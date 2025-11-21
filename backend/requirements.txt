@@ -1,0 +1,15 @@
+# FastAPI Backend Dependencies
+
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+langchain==0.1.0
+langchain-openai==0.0.2
+python-multipart==0.0.6
+
+# Optional: if you want to use pyngrok for tunneling
+pyngrok==7.0.0
+
+# For async support
+asyncio
+aiofiles==23.2.1

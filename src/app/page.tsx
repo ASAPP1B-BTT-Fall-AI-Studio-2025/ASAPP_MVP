@@ -15,6 +15,8 @@ interface Conversation {
   preview: string;
 }
 
+const FASTAPI_URL = process.env.NEXT_PUBLIC_FASTAPI_URL || 'http://localhost:8000';
+
 export default function Home() {
   const [conversations, setConversations] = useState<Conversation[]>([]);
   const [selectedConversationId, setSelectedConversationId] = useState<string>();
@@ -29,13 +31,14 @@ export default function Home() {
 
   const fetchConversations = async () => {
     try {
-      const response = await fetch('/api/conversations');
+      const response = await fetch(`${FASTAPI_URL}/conversations`);
       if (response.ok) {
         const data = await response.json();
         setConversations(data);
       }
     } catch (error) {
       console.error('Failed to fetch conversations:', error);
+      alert('Failed to connect to backend. Make sure FastAPI server is running on http://localhost:8000');
     }
   };
 
@@ -44,8 +47,8 @@ export default function Home() {
     setIsLoading(true);
     
     try {
-      // Extract fields
-      const extractResponse = await fetch('/api/extract', {
+      // Extract fields using FastAPI
+      const extractResponse = await fetch(`${FASTAPI_URL}/extract`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,8 +63,8 @@ export default function Home() {
       const extractedData = await extractResponse.json();
       setExtractedFields(extractedData);
 
-      // Save conversation
-      const saveResponse = await fetch('/api/conversations', {
+      // Save conversation using FastAPI
+      const saveResponse = await fetch(`${FASTAPI_URL}/conversations`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -69,7 +72,6 @@ export default function Home() {
         body: JSON.stringify({
           title: fileName || `Conversation ${conversations.length + 1}`,
           content: text,
-          extractedFields: extractedData,
           fileName,
         }),
       });
@@ -81,7 +83,7 @@ export default function Home() {
       }
     } catch (error) {
       console.error('Failed to process conversation:', error);
-      alert('Failed to process conversation. Please try again.');
+      alert('Failed to process conversation. Make sure FastAPI server is running on http://localhost:8000');
     } finally {
       setIsProcessing(false);
       setIsLoading(false);
@@ -100,7 +102,7 @@ export default function Home() {
     setSelectedConversationId(conversationId);
     
     try {
-      const response = await fetch(`/api/conversations/${conversationId}`);
+      const response = await fetch(`${FASTAPI_URL}/conversations/${conversationId}`);
       if (response.ok) {
         const conversation = await response.json();
         setExtractedFields(conversation.extractedFields);

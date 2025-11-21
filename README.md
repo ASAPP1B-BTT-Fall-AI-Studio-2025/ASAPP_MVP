@@ -21,72 +21,101 @@ Extractify features a modern gradient-based design with:
 - **Accessibility First**: Clear contrast ratios and semantic HTML structure
 - **Component-Based Architecture**: Modular, reusable React components
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - **Frontend**: Next.js 15, React, TypeScript, Tailwind CSS
-- **Backend**: Next.js API Routes
+- **Backend**: FastAPI (Python) with SQLite database
+- **AI/ML**: 
+  - Enhanced regex patterns for fast extraction
+  - OpenAI GPT-4o-mini for intelligent LLM extraction
+  - Hybrid approach combining both methods
 - **Icons**: Lucide React
-- **Machine Learning**: Custom regex-based field extraction (based on Jupyter notebook analysis)
+- **Database**: SQLite with async operations
 
 ## 🏗️ Project Structure
 
 ```
-ASAPP_MVP/
-├── src/
-│   ├── app/
-│   │   ├── api/
-│   │   │   ├── conversations/
-│   │   │   │   ├── [id]/            # Individual conversation details
-│   │   │   │   └── route.ts         # CRUD operations for conversations
-│   │   │   └── extract/
-│   │   │       └── route.ts         # Field extraction API
-│   │   ├── globals.css              # Global styles with gradients
-│   │   ├── layout.tsx
-│   │   └── page.tsx                 # Main application page
-│   ├── components/
-│   │   ├── ConversationHistory.tsx  # Left sidebar conversation list
-│   │   ├── ConversationInput.tsx    # Text input component
-│   │   ├── ExtractedFieldsDisplay.tsx # Right sidebar results
-│   │   ├── FileUpload.tsx           # Drag & drop file upload
-│   │   └── Header.tsx               # Navigation with Extractify branding
-│   └── lib/
-│       ├── database.ts              # SQLite database operations
-│       ├── fieldExtractor.ts        # Basic extraction logic
-│       ├── enhancedFieldExtractor.ts # Advanced extraction with FastAPI integration
-│       └── ml/                      # Original ML analysis notebooks
-├── data/
-│   └── extractify.db                # SQLite database file
+Extractify/
+├── frontend (Next.js)
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── globals.css              # Global styles with gradients
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx                 # Main application page
+│   │   ├── components/
+│   │   │   ├── ConversationHistory.tsx  # Left sidebar conversation list
+│   │   │   ├── ConversationInput.tsx    # Text input component
+│   │   │   ├── ExtractedFieldsDisplay.tsx # Right sidebar results
+│   │   │   ├── FileUpload.tsx           # Drag & drop file upload
+│   │   │   └── Header.tsx               # Navigation with Extractify branding
+│   │   └── lib/
+│   │       ├── fieldExtractor.ts        # Basic extraction logic
+│   │       ├── enhancedFieldExtractor.ts # Advanced extraction patterns
+│   │       └── fastApiIntegration.ts    # FastAPI integration utilities
+├── backend/ (FastAPI)
+│   ├── main.py                          # FastAPI server with hybrid extraction
+│   ├── requirements.txt                 # Python dependencies
+│   └── data/
+│       └── extractify_fastapi.db        # SQLite database
 ├── sample-data/
-│   └── sample-conversation.txt      # Test data for extraction
-└── public/                          # Static assets
+│   └── sample-conversation.txt          # Test data for extraction
+├── setup.sh                             # Development setup script
+└── .env.local                           # Environment configuration
 ```
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js 18.x or later
-- npm or yarn package manager
+- **Node.js** 18.x or later
+- **Python** 3.8 or later
+- **OpenAI API Key** (for LLM extraction)
 
-### Installation
+### Quick Setup
 
-1. Clone the repository:
+1. **Clone and install dependencies:**
+   ```bash
+   git clone <repository-url>
+   cd Extractify
+   ./setup.sh
+   ```
+
+2. **Configure environment variables:**
+   ```bash
+   cp .env.example .env.local
+   # Edit .env.local and add your OPENAI_API_KEY
+   ```
+
+3. **Start the backend (FastAPI):**
+   ```bash
+   npm run backend
+   # Or manually: cd backend && python main.py
+   ```
+
+4. **Start the frontend (Next.js) in another terminal:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser:**
+   - Frontend: [http://localhost:3000](http://localhost:3000)
+   - Backend API: [http://localhost:8000](http://localhost:8000)
+   - API Docs: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+### Manual Setup
+
+**Backend Setup:**
 ```bash
-git clone <repository-url>
-cd ASAPP_MVP
+cd backend
+pip install -r requirements.txt
+python main.py
 ```
 
-2. Install dependencies:
+**Frontend Setup:**
 ```bash
 npm install
-```
-
-3. Run the development server:
-```bash
 npm run dev
 ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Usage
 
@@ -120,42 +149,34 @@ The application extracts four main types of fields:
 - Click on conversation history items to view previous extractions
 - Conversations include metadata like processing date and file information
 
-## API Endpoints
+## 🎯 API Architecture
 
-### POST /api/extract
-Extract fields from conversation text.
+### FastAPI Backend Endpoints
 
-**Request Body:**
-```json
-{
-  "text": "conversation text here",
-  "fileName": "optional-file-name.txt"
-}
-```
+- **GET** `/` - API status and health check
+- **POST** `/extract` - Extract fields from conversation text
+- **GET** `/conversations` - Retrieve all conversations
+- **GET** `/conversations/{id}` - Get specific conversation
+- **POST** `/conversations` - Create new conversation with extraction
+- **DELETE** `/conversations/{id}` - Delete conversation
+- **GET** `/health` - Backend health and LLM availability check
 
-**Response:**
-```json
-{
-  "email": "user@example.com",
-  "phone": "(555) 123-4567",
-  "zipCode": "12345",
-  "orderId": "ORD123456",
-  "metadata": {
-    "fileName": "conversation.txt",
-    "processedAt": "2024-01-01T00:00:00.000Z",
-    "textLength": 150
-  }
-}
-```
+### Extraction Methods
 
-### GET /api/conversations
-Retrieve all stored conversations.
+1. **Regex Extraction** (Always available):
+   - Fast pattern matching for common formats
+   - Enhanced patterns based on your notebook analysis
+   - Handles emails, phones, ZIP codes, order IDs
 
-### POST /api/conversations
-Store a new conversation with extracted fields.
+2. **LLM Extraction** (Optional with OpenAI API):
+   - GPT-4o-mini for intelligent field extraction
+   - Context-aware understanding
+   - Better handling of complex conversation formats
 
-### DELETE /api/conversations?id=<id>
-Delete a specific conversation.
+3. **Hybrid Approach** (Best of both):
+   - Combines regex speed with LLM intelligence
+   - Fallback to regex if LLM unavailable
+   - Prioritizes LLM results when available
 
 ## Development
 
