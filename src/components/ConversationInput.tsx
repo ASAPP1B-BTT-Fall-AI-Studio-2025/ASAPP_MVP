@@ -34,7 +34,7 @@ export default function ConversationInput({ onSubmit, isProcessing }: Conversati
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Paste or type your conversation text here..."
-            className="w-full h-32 p-4 border border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+            className="w-full h-32 p-4 border border-gray-300 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 bg-white text-indigo-700 placeholder-gray-400 font-medium"
             disabled={isProcessing}
           />
         </div>
