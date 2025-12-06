@@ -1,0 +1,2138 @@
+convo_text,convo_id,customer_name,email,phone number,username,street_address,full_address,city,state,zip_code,order_id,hasNA,assigned_to,isChecked
+"Agent: Hello. How can I help you today?
+Customer: Hi, I have a problem, every time I find the perfect item it's always out of stock.
+Agent: Oh Im sorry to hear that.
+Agent: Was it a particular item?
+Customer: It's very unnerving. I spend time shopping and the item isn't available. Particularly a Michael Kors Jacket, the 94$ one.
+Agent: May I have your name please? I will let the purchasing department know
+Customer: Joyce Wu
+Action: The purchasing department has been notified.
+Action: Account has been pulled up for Joyce Wu.
+Agent: Ok Joyce I notified the purchasing department.
+Customer: Ok, sure, I just wanted to let you know. Goodbye.
+Agent: We can back order this jacket also.
+Customer: Nah, I'll see if someone else has it, bye.
+Agent: Ok bye.",2910,joyce wu,jw060368@email.com,(058) 685-7642,jw060368,1314 circle drive,"1314 circle drive  raleigh, tx 36500",raleigh,tx,36500,9847994771,0,Bella,No
+"Agent: Hello, how can i help you today
+Customer: I want to check a shipping issue
+Customer: Because the shipping cost was too high
+Agent: Okay sure, could i get your full name Username Email adress or Order ID
+Customer: Chloe Zhang
+Action: Account has been pulled up for Chloe Zhang.
+Customer: cz262653@email.com
+Customer: Order ID: 1551016870
+Action: Purchase validation in progress ...
+Agent: Okay could i get the shipping status of your order
+Customer: It's out of delivery
+Agent: Okay sadly i cannot lower the shipping cost but i can refund part of the shipping fee
+Agent: How much was your shipping fee
+Customer: I really can't remember but it was on a high side
+Agent: Okay well standard shipping is 8 so i will refund you $15
+Action: A refund has been made for the amount of $15.
+Agent: is there anything else i can help you with today?
+Customer: Thanks
+Customer: Really appreciate",7375,chloe zhang,cz262653@email.com,(746) 226-0453,cz262653,8588 lincoln ave,"8588 lincoln ave  jacksonville, ca 40577",jacksonville,ca,40577,1551016870,0,Bella,No
+"Agent: Hello, how can I help you
+Customer: Hello! I'm checking on my refund status
+Agent: I will be happy to help you with that.
+Agent: Can I get your name ?
+Customer: Alessandro Phoenix
+Action: Account has been pulled up for Alessandro Phoenix.
+Agent: Can I now get your username, email and order id?
+Customer: ap181733, ap181733@email.com, 6571146784
+Action: Purchase validation in progress ...
+Agent: Everything looks good and to answer your question your refund is in status. It was processed over the phone and will be back on your card soon.
+Customer: okay, thank you
+Agent: do you need anymore help?
+Customer: no, thank you
+Agent: Okay, have a great day.",9864,alessandro phoenix,ap181733@email.com,(718) 922-6029,ap181733,8652 lincoln ave,"8652 lincoln ave  jacksonville, tx 97040",jacksonville,tx,97040,6571146784,0,Bella,No
+"Customer: hello
+Agent: Hello, how can I help?
+Customer: i want to confirm that my shipping is tomorrow afternoon becuase i got an email saying a different date
+Agent: I see I would be happy to look into that for you, so it just said a different date? Could I ask for your full name or account id to bring up the account?
+Customer: Name: Rodriguez Domingo
+Action: Account has been pulled up for Rodriguez Domingo.
+Agent: Alright, and now to verify identity I just need account id and order id.
+Customer: Order ID: 3587576077
+Customer: Account ID: 8BC8PXUINA
+Action: Identity verification in progress ...
+Agent: Identity has been verified, now I just need the username and email to research this further.
+Customer: Username: rd052284
+Customer: rd052284@email.com
+Action: Purchase validation in progress ...
+Action: Querying the system for an answer ...
+Agent: In looking at the order it seems that email was indeed an error, everything looks set for tomorrow afternoon.
+Agent: was there anything else I could help with?
+Customer: thats all!
+Customer: thank you
+Agent: have a great day",10385,rodriguez domingo,rd052284@email.com,(070) 055-9287,rd052284,0009 lexington ave,"0009 lexington ave  raleigh, ny 3820",raleigh,ny,3820,3587576077,0,Bella,No
+"Agent: Thank you for contacting Acme Brands! How can I help you today?
+Customer: I already completed my return.
+Customer: I still haven't gotten my money back.
+Agent: I'm sorry that your credit hasn't appeared on your bill yet. I'd be happy to look at that for you. Could I have your name or account ID?
+Customer: Crystal Minh
+Action: Account has been pulled up for Crystal Minh.
+Agent: Thank you. Can you verify your username, email address and the order ID for the return?
+Customer: cm585915,cm585915@email.com,8914481878
+Action: Purchase validation in progress ...
+Customer: I am waiting for 9 days.
+Customer: I need my money back.
+Action: A reason of 9 days has been recorded.
+Agent: I'm sorry it has been so long.
+Agent: I'd be happy to add the credit to your account for the order now.
+Customer: ok
+Action: Order has been updated with give credit.
+Customer: Thanks.
+Agent: I've applied the credit to your account. You're welcome. Can I help you with anything else today?
+Customer: That's all for today!
+Agent: Great! Enjoy your day!
+Customer: You too!",10308,crystal minh,cm585915@email.com,(875) 068-4394,cm585915,6342 kennedy st,"6342 kennedy st  raleigh, mi 67627",raleigh,mi,67627,8914481878,0,Bella,No
+"Agent: Thank you for contacting Acme.  How may I help you today?
+Customer: Hi there!
+Agent: Hi
+Customer: I need to return one item
+Agent: Okay, what seems to be the problem?
+Customer: The Guess Boots I bought has a stain on it.
+Agent: Oh, I'm sorry to hear that.  Let me see what I can do.  To start with, I'll need to gather some information from you, so that I can take a look at your account and verify the purchase
+Customer: Sure
+Agent: May I ask for your full name, username, email address, and the order ID for this item?
+Agent: and if you could also give me your membership level, that would also help
+Customer: Joseph Bnater. And my username is jbanter1
+Action: Account has been pulled up for Joseph Banter.
+Customer: email jabanter1@email.com
+Customer: the order id is 2246225562
+Action: Purchase validation in progress ...
+Customer: I am a Bronze member.
+Agent: Ah, that's good to hear.  Since you are one of our more valued members, you're eligible to return any item as long as it was bought in the last 90 days.
+Agent: Or if you still have your receipt, or the item is still in its original packaging, we can take refunds at any time.
+Action: Membership level of Bronze has been noted.
+Customer: That's great. Thank you.
+Customer: Can you process the return now?
+Agent: Yes, I can.  If you'd like, I can take down your address and send you a shipping label for the return
+Agent: Or, if you'd prefer, you could also return your boots to a store or a drop-off center
+Customer: Here is my address : 8469 Lexington Ave, Baltimore, TX 95670
+Action: Details of 8469 Lexington Ave, Baltimore, TX 95670 have been entered.
+Action: Order has been updated with By mail.
+Agent: Excellent.  We'll get a prepaid shipping label sent out to you right away, and then you can return the item whenever you're ready.
+Agent: Is there anything else I can help you with today?
+Customer: Thanks, That's all for today. Have a great day.
+Agent: You're welcome, and you too",5553,joseph banter,jbanter1@email.com,(648) 829-5631,jbanter1,8469 lexington ave,"8469 lexington ave  baltimore, tx 95670",baltimore,tx,95670,2246225562,0,Bella,No
+"Agent: Welcome to AcmeBrands. How may I help you?
+Customer: Hola! I received a pair of jeans that had a stain on them when I got them. Can I make a return?
+Agent: OK. Let me check.
+Agent: What is your full name or account ID?
+Customer: Alessandro Phoenix
+Action: Account has been pulled up for Alessandro Phoenix.
+Agent: Thanks Allesandro. I have pulled up your account.
+Agent: What is your username, email address,a nd order ID?
+Customer: ap411546
+Customer: ap411546@email.com
+Customer: 0657116520
+Action: Purchase validation in progress ...
+Agent: Thanks. I was able to validate your purchase.
+Agent: What is your member level?
+Customer: I'm a Gold member
+Action: Membership level of Gold has been noted.
+Agent: You can return, since gold members get unlimited returns. What is your full address?
+Customer: Great!
+Customer: 4974 Brushwick Dr  Monterey, TX 95667
+Action: Details of 4974 Brushwick Dr Monterey, TX 95667 have been entered.
+Agent: And how would you like to do the return?
+Customer: I'll send it back by mail, if that's okay?
+Action: Order has been updated with By Mail.
+Agent: OK. I have updated the order. Anything else i can help with today?
+Customer: That's it, thanks for your help!
+Agent: No problem. Have a great day!",9005,alessandro phoenix,ap411546@email.com,(312) 978-2023,ap411546,4974 brushwick dr,"4974 brushwick dr  monterey, tx 95667",monterey,tx,95667,0657116520,0,Bella,No
+"Agent: Thank you for shopping with AcmeBrands! How can I help you?
+Customer: I just wanted to put in a complaint because the item I am trying to order is out of stock
+Agent: I'm sorry to hear that. May I have your full name to pull up your account?
+Customer: Crystal Minh
+Action: Account has been pulled up for Crystal Minh.
+Agent: Thank you. Which item is out of stock?
+Customer: the gray jacket brand calvin klein
+Action: A reason of Calvin Klein jacket has been recorded.
+Agent: I am writing a report to the purchasing department so that they know they need to fix their projections so this doesn't happen again.
+Action: The purchasing department has been notified.
+Customer: Thanks for that
+Agent: You're welcome! Is there anything else I can do for you?
+Customer: no that was all
+Agent: Okay. Please contact us again for your future needs. Have a nice day!",3601,crystal minh,cminh726@email.com,(962) 309-4099,cminh726,0439 lexington ave,"0439 lexington ave  la fayette, mi 78907",la fayette,mi,78907,8945804645,0,Bella,No
+"Agent: Hello! How may I help you?
+Customer: Hi!   Can you help me return an item please?
+Agent: Oh yes! May I have your full name and account ID please?
+Customer: Great!  I'm Alessandro Phoenix
+Customer: Account ID is GUIGIDEUG
+Agent: Thank you. Why are you wanting to return this product?
+Action: Account has been pulled up for Alessandro Phoenix.
+Customer: I bought it to help me blend into the snow, but it's the wrong color
+Agent: Oh that's not good.
+Agent: May I have your username, email address, and order ID?
+Customer: Yea, a white one would have been better
+Customer: alessandrophoenix224
+Customer: alessandrophoenix224@email.com
+Agent: Ah yes unless people are relieving themselves outside.
+Customer: Order ID is 7350831975
+Action: Purchase validation in progress ...
+Agent: What membership level are you?
+Customer: Guest
+Agent: Thank you. When was your purchase date?
+Customer: It was 2020-03-12
+Agent: Do you still have your receipt?
+Customer: I do!
+Agent: Oh great! We can return the item with the receipt.
+Customer: Oh that is such a relief
+Agent: May I have your address to print out a shipping label?
+Customer: 7417 Circle Drive  La Fayette, CA 20442
+Action: Membership level of guest has been noted.
+Action: Details of 7417 Circle Drive La Fayette, CA 20442 have been entered.
+Agent: Thank you. How would you like to process your return?
+Agent: Mail, in store, or drop off center?
+Customer: I will bring it into the store
+Customer: that way I can get the other color
+Action: Order has been updated with in store.
+Agent: Great! We have your return all set up
+Agent: Is there anything else I can help you with?
+Customer: Perfect!  That's it for today, thank you
+Agent: Have a great day.",9619,alessandro phoenix,alessandrophoenix224@email.com,(584) 694-3427,alessandrophoenix224,7417 circle drive,"7417 circle drive  la fayette, ca 20442",la fayette,ca,20442,7350831975,0,Bella,No
+"Agent: Hello, how I can I help you today?
+Customer: HI, I wanted to check on my order status because I got a notification from UPS, and the cost of shipping is too high
+Agent: May I have your full name or account ID?
+Customer: Sure. My name is Albert Sanders. I was wondering if I can just cancel my order and get a refund.
+Action: Account has been pulled up for Albert Sanders.
+Agent: May I have your username, email address, and the order ID?
+Customer: Yeah sure. My username is asanders138
+Customer: Email is asanders138@email.com
+Customer: Order ID is 3338498646
+Action: Purchase validation in progress ...
+Agent: Has the item been shipped already?
+Customer: Sorry about this, I didn't realize the shipping was going to be so expensive
+Customer: I don't think so. It says Order Received
+Agent: Ok, I can cancel the order for you then.
+Customer: Awesome, thank you.
+Action: Order has been updated with cancel order.
+Agent: The order has now been cancelled.
+Customer: Marvelous.
+Agent: Is there anything else I can assist you with today?
+Customer: Nope, that was everything. Thanks so much.
+Agent: Have a wonderful day.
+Customer: You too!",818,albert sanders,asanders138@email.com,(130) 199-0630,asanders138,5119 circle drive,"5119 circle drive  la fayette, ca 63272",la fayette,ca,63272,3338498646,0,Bella,No
+"Agent: Hello, how can I help you?
+Customer: Hi. I ordered the wrong item and would like to cancel.
+Customer: Can I change my order?
+Agent: Okay, how would you like to change it?
+Customer: Well I got the wrong boots. I messed up when putting them in the shopping cart. Can I change the order?
+Agent: I'm still trying to understand what you want to do. What exactly do you want changed and what do you want it changed to
+Customer: I want to Manage Shipping of my order.
+Agent: Okay, no problem! Can I get your full name or account ID?
+Customer: Rodriguez Domingo
+Action: Account has been pulled up for driguez Domingo.
+Action: Account has been pulled up for Rodriguez Domingo.
+Agent: What is the shipping status?
+Customer: Out for delivery.
+Agent: Great, thanks. Can I get your username, email, and order ID as well?
+Customer: rodriguezdomingo251
+Action: Shipping status of out for delivery has been noted.
+Customer: rodriguezdomingo251@email.com
+Customer: 8706847615
+Action: Purchase validation in progress ...
+Agent: Thanks
+Action: Order has been updated with change order.
+Agent: I went ahead and updated the order for you!
+Customer: Thanks.
+Agent: Anything else you need?
+Customer: Nope.
+Agent: Have a great day",8359,rodriguez domingo,rodriguezdomingo251@email.com,(784) 880-5352,rodriguezdomingo251,9320 brushwick dr,"9320 brushwick dr  san mateo, ca 37973",san mateo,ca,37973,8706847615,0,Bella,No
+"Customer: Hi
+Agent: Hello, how can I help you?
+Customer: I am trying to use a promo code and its not working
+Agent: I will be happy to help you out with this.
+Agent: Can I get a name.
+Customer: I just received it 5 days ago and it's valid through the end of month
+Customer: Sanya afzal
+Customer: Thank you
+Action: Account has been pulled up for Sanya afzal.
+Agent: I found your account. I will now check with the system to see if it is a valid error.
+Action: Querying the system for an answer ...
+Customer: ok thank you
+Agent: It is an error with our own system. So I will make a new code for you to use.
+Action: A promo code has been created.
+Agent: Here is your new code: 4ZRDB
+Customer: Oh goodie, thank you so much
+Customer: It made me sad when it wouldnt work
+Customer: I love to shop :)
+Agent: Im glad I was able to help you out. Do you need anymore help?
+Customer: You are awesome, thanks again!
+Customer: Thats all
+Agent: Have a great day.
+Customer: Have a good day",9904,sanya afzal,sa695106@email.com,(931) 118-9666,sa695106,3422 lincoln ave,"3422 lincoln ave  baltimore, tx 58925",baltimore,tx,58925,8839948057,0,Bella,No
+"Agent: Hi, how can I help you?
+Customer: HI there, I just tried to use a promo code that I received 8 days ago but it's not working; it's invalid the site says.
+Customer: Can you help me with that?
+Agent: I'll see what I can do. Can I get your full name to pull up your account?
+Customer: Sure.  My name is Albert Sanders.
+Action: Account has been pulled up for Albert Sanders.
+Agent: Thanks. Normally our promotions only last 7 days, but I'll check the system to see about this one.
+Action: Querying the system for an answer ...
+Customer: Thank you for checking!
+Agent: Unfortunately the code is now invalid, but I might be able to fix this for you. Do you know your membership level?
+Customer: It's Guest level.
+Action: Membership level of Guest has been noted.
+Agent: Okay, it looks like there's nothing I can do to extend this promotion. I'm sorry about this.
+Customer: Oh okay, well thank you for your help. :)
+Customer: That's all I needed help with.
+Agent: Of course. Have a great day!
+Customer: You too!",9814,albert sanders,albertsanders520@email.com,(329) 543-6707,albertsanders520,6812 primrose ave,"6812 primrose ave  baltimore, tx 94796",baltimore,tx,94796,6162913681,0,Bella,No
+"Agent: Hi, how can I help you today?
+Customer: Hi. I got an email that said I was receiving some items that I did not thought I would. Am I still going to receive just the Tommy Hilfiger shirt and Michael Kors shirt?
+Customer: My name is Joyce Wu and my account ID is 6Z1K9SMOCE
+Agent: I can check into that for you, one minute please.
+Action: Account has been pulled up for Joyce Wu.
+Agent: Do you also have your order ID number?
+Customer: 2878093617
+Action: Identity verification in progess ...
+Action: Purchase validation in progress ...
+Action: Identity verification in progess ...
+Action: Querying the system for an answer ...
+Agent: It looks like that was our mistake, my apologies! Do you know if the package has shipped yet or not?
+Customer: It says In Transit
+Action: Shipping status of in transit has been noted.
+Agent: Ok, once you receive the package you can contact us to begin the return process.
+Customer: Okay. THank you.
+Agent: No problem, is there anything else I can help you with?
+Customer: No. That is all.
+Agent: Ok, again I apologize! Have a nice day :)",1817,joyce wu,jwu59737@email.com,(987) 309-7446,jwu59737,7831 2nd ave,"7831 2nd ave  san lima, ca 77271",san lima,ca,77271,0815645218,0,Bella,No
+"Agent: Hello! Thank you for choosing AcmeBrands. How may I assist you?
+Customer: HI! I just bought a jacket but wow... you guys charge a lot for shipping cost
+Customer: Is there any ways to get free shipping from your company?
+Agent: I'm so sorry for the inconvenience!
+Agent: I'll be glad to help you with that. Would you provide your full name, please?
+Customer: David Williams
+Action: Account has been pulled up for David Williams.
+Agent: Thank you, David.
+Agent: To confirm your purchase, may I please get your Username, Email Address, and Order ID?
+Customer: Username: dwilliams921
+Customer: dwilliams921@email.com
+Customer: Order ID: 3725428970
+Action: Purchase validation in progress ...
+Agent: Perfect, thank you.
+Agent: What is the shipping status on your order? It may say ""Order Received"", ""In Transit"", ""Out For Delivery"", or ""Delivered"".
+Customer: it says order received
+Customer: hello?
+Agent: One moment, please! Looking into that for you.
+Action: Shipping status of order received has been noted.
+Customer: ok thank you
+Agent: Thank you so much for your patience, David.
+Agent: What I can do, since your order isn't out for delivery yet, is to cancel the shipment at this time.
+Customer: Oh but I still want my item
+Agent: I understand! Would you like to downgrade the shipping method to reduce the cost, perhaps?
+Customer: yes please
+Customer: That works
+Agent: I'll be glad to help you with that, David. To continue assisting you, may I please get your Account ID and Order ID?
+Customer: Acc ID is DZO2DT97MW
+Customer: Order ID: 3725428970
+Action: Identity verification in progress ...
+Agent: And your membership level, please?
+Customer: Gold
+Action: Membership level of gold has been noted.
+Agent: Perfect! I can delay the shipping date for you, no problem.
+Agent: Would next week work for you?
+Customer: Thanks
+Customer: yeah it is fine
+Customer: I am not in a hurry
+Action: Order has been updated with next week.
+Agent: All set! The new delivery date has been requested. Is there anything more I may help you with today?
+Customer: That's all
+Customer: Thanks
+Agent: Thank you so much for contacting AcmeBrands customer service. Goodbye!",5782,david williams,dwilliams921@email.com,(882) 854-0227,dwilliams921,5910 brushwick dr,"5910 brushwick dr  la fayette, wa 58704",la fayette,wa,58704,3725428970,0,Divya,No
+"Agent: Hello! How may I assist you today?
+Customer: I need to return an item I ordered
+Agent: I'll be glad to assist you with that.
+Agent: What is your full name or Account ID, please?
+Customer: My name is Albert Sanders.
+Action: Account has been pulled up for Albert Sanders.
+Agent: And you are interested in returning your item, correct?
+Customer: Yes I need to return them because I got the wrong size/
+Agent: I completely understand. May I please get your Username, your Email Address, and your Order ID?
+Customer: Sure. The user name is as128180
+Customer: email as128180@email.com
+Customer: and order id 7764415715
+Action: Purchase validation in progress ...
+Agent: Thank you so much Albert, I'm validating your purchase now. May I ask what your membership level is?
+Customer: I'm at Silver
+Agent: And what was your purchase date?
+Customer: December 8, 2019
+Action: Membership level of Silver has been noted.
+Agent: Perfect! Because you're a Silver member, you are eligible to return.
+Agent: Would you please provide your full address? I'll need the Street Number and Street Name, City, State, and Zip Code.
+Customer: My mailing address is 4688 Kennedy St  San Lima, CA 21647
+Action: Details of 4688 Kennedy St San Lima, CA 21647 have been entered.
+Agent: Thank you so much, Albert. And how would you like to process your return? Your options include By Mail, In Store, or Drop Off Center.
+Customer: Where is the closest drop off center?
+Agent: If you'll visit UPS.com and enter your address, you'll be given some options for your nearest UPS drop off center.
+Customer: I'll just do the instore exchange.
+Agent: Perfect. Is there anything more I may assist you with today?
+Customer: do I need a reference number or anything for the exchange?
+Agent: You will receive an email with the shipping label for the return, if you should change your mind and wish to mail in your return instead. But you don't need a reference number, no.
+Agent: Is there anything more I may assist you with?
+Customer: Okay. That will work. Nothing else today, thanks.
+Agent: Take care and have a wonderful day!",1966,albert sanders,as128180@email.com,(145) 873-8793,as128180,4688 kennedy st,"4688 kennedy st  san lima, ca 21647",san lima,ca,21647,7764415715,0,Divya,No
+"Agent: Hello, how may I help you?
+Customer: Hello. I need to change the shipping address on my order.
+Customer: I think it took my old address my mistake.
+Agent: Okay, can I have your full name please?
+Customer: yes, it's Sanya Afzal.
+Action: Account has been pulled up for Sanya Afzal.
+Agent: What is the current shipping status of the order?
+Customer: it says in transit
+Action: Shipping status of In Transit has been noted.
+Agent: Okay, may I have your username, email, and order ID?
+Customer: yes, my username is safzal01, my email is safzal01@email.com and the order id is 1534836185
+Action: Purchase validation in progress ...
+Action: Order has been updated with Change address.
+Agent: Great, I've updated your order to the current address on your account. It was in fact being sent to the old address.
+Customer: ok great, thanks!
+Agent: You should receive your package soon.
+Agent: Is there anything else you need?
+Customer: no that's it thans
+Agent: Okay, thank you and have a nice day.",10221,sanya afzal,safzal01@email.com,(913) 324-7846,safzal01,0366 brushwick dr,"0366 brushwick dr  newark, ca 98373",newark,ca,98373,1534836185,0,Divya,No
+"Agent: Hi, I'm Danny from ACME. How may I assist you today?
+Customer: Hi Danny. I need to make a return.
+Agent: Sure, that's no problem. May I have your full name or Account ID, your username, email address, and Order ID.
+Customer: sure, it's Chloe Zhang. I don't know my account id, my username is cz823340, my email is cz823340@email.com and my order id is 3447907111
+Action: Account has been pulled up for Chloe Zhang.
+Customer: the color of the boots weren't the same shade of brown that i pictured them to be
+Action: Purchase validation in progress ...
+Agent: Oh, I'm sorry to hear that.
+Agent: I've pulled up your account and validated your purchase. Now I just need to verify your membership level.
+Customer: it's silver
+Agent: When did you purchase the boots?
+Customer: on the 2nd of february
+Agent: Since you purchased them within six months, your Silver memberships allows you to return it with no hassles!
+Agent: Now, all I need is your full address to send you a shipping label.
+Action: Membership level of silver has been noted.
+Customer: ok my full address is 9223 2nd ave monterery wa, 65514
+Action: Details of 9223 2nd Ave Monterery, WA 65514 have been entered.
+Agent: All right. How would you like to return the boots? By mail, in one of our stores, or via a drop off location?
+Customer: mail will work
+Action: Order has been updated with mail.
+Agent: Okay, you should be able to print your shipping label and return the boots.
+Agent: Is there anything else I can assist you with?
+Customer: nope that's it
+Agent: Have a great day! Thank you for being an ACME customer.",5885,chloe zhang,cz823340@email.com,(479) 428-5755,cz823340,9223 2nd ave,"9223 2nd ave  monterey, wa 65514",monterey,wa,65514,3447907111,0,Divya,No
+"Agent: Hi, how may I help you?
+Customer: Hi, I just wondered what happened, my shipping on my last order was high.
+Agent: Sure, let's check. May I have your username, email and order ID?
+Customer: yeah, i am Rodriguez Domingo , my email is rodriguezd843@email.com
+Customer: the order is 9768577077 and my username is rodriguezd843
+Action: Account has been pulled up for Rodriguez Domingo .
+Agent: Thank you, one second.
+Action: Purchase validation in progress ...
+Agent: What is your shipping status?
+Customer: in transit
+Action: Shipping status of in transit  has been noted.
+Agent: I will waive the fee on your shipping.
+Action: Order has been updated with waive fee.
+Agent: It has been removed. Anything else today?
+Customer: o thank you so much,
+Customer: that is all
+Agent: No problem, have a good one!",9448,rodriguez domingo,rodriguezd843@email.com,(032) 176-2928,rodriguezd843,7905 lincoln ave,"7905 lincoln ave  brighton, ny 76165",brighton,ny,76165,9768577077,0,Divya,No
+"Agent: Hello! Thank you for contacting us today. How can I help you?
+Customer: Hello, I purchased an item and would like to get a refund as I have changed my mind about it
+Agent: Okay I can help you with that. Can I get your name please?
+Customer: Norman Bouchard
+Action: Account has been pulled up for Norman Bouchard.
+Agent: Thank you, Norman. Now can I also get your username, email address, and Order ID?
+Customer: normanbouchard547@email.com, normanbouchard547 and the order id is 7495718328
+Action: Purchase validation in progress ...
+Agent: Perfect! Thank you! Okay how would you like that refund today? We can refund it via a gift card, add value to your account, paper check, or back to the credit card on file.
+Customer: yes please
+Agent: Which method of refund would you like?
+Customer: gift card please
+Action: A reason of Gift card has been recorded.
+Agent: Okay can I get your address please for that gift card?
+Customer: 4391 Kennedy St Baltimore, WA 14351
+Action: Details of 4391 Kennedy St Baltimore, WA 14351 have been entered.
+Agent: And how much was the price of the item you want a refund for?
+Customer: $54
+Action: Details of 54 have been entered.
+Agent: Perfect. I have loaded the gift card in the amount of $54 and we will get that sent to you immediately. Is there anything else I can help with?
+Customer: that is all, thank you
+Agent: Thank you and have a great day!",3064,norman bouchard,normanbouchard547@email.com,(227) 624-1249,normanbouchard547,4391 kennedy st,"4391 kennedy st  baltimore, wa 14351",baltimore,wa,14351,7495718328,0,Divya,No
+"Customer: Hi
+Customer: I need your assistance
+Agent: Welcome to AcmeBrands. How may I help?
+Customer: I bought a shirt from you guts
+Customer: you guys sorry
+Customer: But I need to return it
+Agent: OK. I can help with that.
+Customer: I have lost a ton of weight on a diet and it doesn't fit anymore
+Customer: It's the wrong size
+Customer: I didn't think my diet would work so I bought it in a big sie
+Customer: But the diet did work :)
+Agent: Congratulations on the weight loss. Sure, let me help with that.
+Customer: Okay thanks
+Agent: May I have your full name and account ID
+Customer: Sanya Afzal
+Customer: sanyaafzal432
+Action: Account has been pulled up for Sanya Afzal.
+Agent: OK Sanya. I have pulled up your account.
+Agent: Next I will need your username email address and order id
+Customer: Okay
+Customer: sanyaafzal432@email.com
+Customer: 2771268817
+Customer: It's the $99 Tommy Hilfiger shirt
+Agent: OK. Got it. What was your username again?
+Customer: sanyaafzal432
+Action: Purchase validation in progress ...
+Agent: Thanks. I have validated your purchase.
+Customer: Okay, so can I return it?
+Agent: What is your member level
+Customer: bronze
+Agent: What was the purchase date?
+Customer: 2020-01-07
+Agent: Do you have the receipt as well?
+Customer: Yes, I have it
+Customer: I don't have the original packaging, though
+Customer: Is that a problem?
+Action: Membership level of bronze has been noted.
+Agent: No problem.
+Customer: Okay great
+Agent: I just need your info so we can get you a label
+Agent: Full Street address
+Agent: City state and zip
+Customer: 2480 Lincoln Ave  Baltimore, TX 13026
+Action: Details of 2480 Lincoln Ave Baltimore, TX 13026 have been entered.
+Agent: Thanks. I have made a note.
+Customer: So you will send me a label to return it?
+Agent: Would you like to process by mail, in store, or drop off?
+Customer: I would like to return it in the mail
+Action: Order has been updated with By Mail.
+Agent: Excellent. I have made a note and a label will be in your email shortly.
+Agent: Anything else I can help with?
+Customer: Great!
+Customer: That's it!
+Customer: Thanks for your help",1989,sanya afzal,sanyaafzal432@email.com,(658) 974-2160,sanyaafzal432,2480 lincoln ave,"2480 lincoln ave  baltimore, tx 13026",baltimore,tx,13026,2771268817,0,Divya,No
+"Agent: Thank you for contacting Acme.  How may I help you today?
+Customer: Hi there. I purchased a pair of jeans for a friend's birthday, but I need to return them because they are the wrong size.
+Agent: Okay, I should be able to help you with that
+Agent: may I ask your full name and, to verify your account details, your username, email address and the Order ID?
+Customer: Sure. My full name is Crystal Minh and my username is cm748362.
+Action: Account has been pulled up for Crystal Minh.
+Customer: The email address on file should be cm748362@email.com and the order ID is 4997271052
+Action: Purchase validation in progress ...
+Agent: okay, we should be able to process a return for you.  May I ask your membership level?
+Customer: Sure thing. I have a silver membership.
+Agent: Excellent.  So for a valued member such as yourself, you can return any item that was purchased in the last 6 months, or at any time if you still have a receipt or the original packaging
+Customer: Ok perfect. I do still have the receipt for the item
+Agent: That's good.  Would you like to return your item in store, at a drop-off center, or would you prefer that I send you a shipping label so that you can send the package back to us?
+Customer: It would probably be most convenient if you could send me a shipping label
+Agent: Okay.  May I just confirm your address, and then I'll send that right out
+Customer: Yes. My address is 1593 Lincoln Ave  San Mateo, NY 15562
+Action: Membership level of Silver has been noted.
+Action: Details of 1593 Lincoln Ave San Mateo, NY 15562 have been entered.
+Action: Order has been updated with By Mail.
+Agent: Okay, you should be all set for now.  Is there anything else I could help with while we're here?
+Customer: No that's everything!
+Customer: I appreciate your help
+Agent: I'm glad I could help.  Have a great day, Ms Minh
+Customer: You too!",7587,crystal minh,cm748362@email.com,(810) 002-6540,cm748362,1593 lincoln ave,"1593 lincoln ave  san mateo, ny 15562",san mateo,ny,15562,4997271052,0,Divya,No
+"Agent: Hi! How can I help you today?
+Customer: Hi
+Customer: I'd like to check that I was charged the correct shipping amount for my order.
+Customer: The amount charged is excessive..
+Customer: I'd like a refund please.
+Agent: Sure, I can help you with that. Can I please have your full name, username, email address, and order ID?
+Customer: Alessandro Phoenix
+Action: Account has been pulled up for Alessandro Phoenix.
+Customer: alessandrophoenix513
+Customer: alessandrophoenix513@email.com 8894005686
+Action: Purchase validation in progress ...
+Agent: And what is the shipping status of the order?
+Customer: delivered
+Agent: Okay, since the item has already been delivered, I can give you a partial refund for the shipping cost.
+Customer: ok
+Action: A refund has been made for the amount of $8.
+Customer: Thank you
+Agent: I have issued the refund to your account. Is there anything else I can help you with today?
+Agent: You're welcome!
+Customer: That was all! Have a nice day!! :)
+Agent: You too!!",10458,alessandro phoenix,alessandrophoenix513@email.com,(461) 841-3900,alessandrophoenix513,4336 kennedy st,"4336 kennedy st  baltimore, wa 66192",baltimore,wa,66192,8894005686,0,Divya,No
+"Agent: Hi, what can I do for you?
+Customer: Hi I have a question about a shirt I am considering buying
+Agent: Okay, I can help you. What is your question?
+Customer: it's the Guess shirt. You have it at $89 but I see it at Nordstrom for $59. What's your company policy on price matching?
+Agent: Okay, can I have your name please?
+Customer: Joseph Banter
+Action: Account has been pulled up for Joseph Banter.
+Action: A reason of competitor has been recorded.
+Agent: Can I have your account ID and Order ID?
+Customer: 6DAIKXRA4J
+Customer: order ID is 5199439814
+Action: Identity verification in progress ...
+Action: Searching the FAQ pages ...
+Action: System Action: search pricing
+Agent: We do not price match, I am sorry.
+Agent: Is there anything else I can do for you?
+Customer: so there's nothing that you can do?
+Agent: No I am sorry
+Customer: I mean I have given you guys a lot of buisness. I'm a gold member for crying out loud
+Agent: Thank you for being a valued customer, I can offer you a discount code. WOuld you like that?
+Customer: how much is the code good for?
+Agent: 20% off
+Customer: is the code good for the entire shopping cart or just one item?
+Agent: entire cart
+Customer: ok why don't we do that then
+Action: A promo code has been created.
+Agent: AU184
+Customer: ok thanks
+Agent: Is there is anything else I can do for you?
+Customer: that's it
+Agent: Have a good day.",3842,joseph banter,jb059407@email.com,(404) 529-8208,jb059407,3019 brushwick dr,"3019 brushwick dr  baltimore, mi 88601",baltimore,mi,88601,5199439814,0,Divya,No
+"Agent: Hi how can I help you
+Customer: Hi! I was looking at buying an item but it seems to be out of stock
+Agent: OK can I get your full name
+Agent: And what is the item?
+Customer: Joyce Wu
+Customer: Its a Guess Jeans
+Action: Account has been pulled up for Joyce Wu.
+Action: A reason of Guess Jeans has been recorded.
+Action: The purchasing department has been notified.
+Agent: OK first I am letting the purchasing department know about this
+Agent: Would you like to back order that item?
+Customer: Thank you
+Customer: yes please
+Customer: I would like to have it delivered once it becomes available
+Agent: Shall we use your credit card on file?
+Customer: Yes please
+Customer: thank you
+Action: A purchase of Guess Jeans was made.
+Agent: OK it's in, it wull ship to you automatically when back in stock
+Agent: Anything else?
+Customer: That is all. Thank you
+Agent: Have a nice day",6362,joyce wu,joycewu6@email.com,(461) 599-6062,joycewu6,8396 lexington ave,"8396 lexington ave  brighton, wa 80499",brighton,wa,80499,5658825700,0,Divya,No
+"Agent: Hello, how may I help you?
+Customer: Hello, I am going to complain because the item I want is now way overpriced compared to other stores
+Agent: I'm sorry for that, if I could I get your name I can look into this
+Customer: Alessandro Phoenix
+Action: Account has been pulled up for Alessandro Phoenix.
+Agent: Thanks, Alessandro. What item was overpriced?
+Customer: The Calvin Klein jeans
+Action: A reason of competitor has been recorded.
+Agent: Could I also have your Account and Order ID?
+Customer:  DXNMBFMWZQ,  6258197355
+Action: Identity verification in progress ...
+Agent: Thanks again. Sorry for the bad price, our algorithm updates the price dyunamically and there is generally nothing we can do.
+Customer: Is there anyway I can get a promo code?
+Agent: Yes, I can send one your way.
+Customer: Thanks
+Action: A promo code has been created.
+Agent: The promo code is GRCYJ
+Agent: Is there anything else I could help you with?
+Customer: That is all thanks
+Agent: Have a good day!",9201,alessandro phoenix,ap927518@email.com,(170) 984-7183,ap927518,6722 primrose ave,"6722 primrose ave  monterey, mi 680",monterey,mi,680,6258197355,0,Divya,No
+"Agent: Hi there, what can I do for you?
+Customer: Hi. I want to buy a pair of jeans but I see they are out of stock
+Agent: I see.
+Agent: let me see if there is anything I can do
+Agent: Can I get your name please?
+Customer: My name is Crystal Minh
+Agent: thank you
+Action: Account has been pulled up for Crystal Minh.
+Agent: what brand of jeans?
+Agent: or is it all of the jeans?
+Customer: They're Michael Kors jeans
+Agent: OK, thx
+Action: A reason of  Michael Kors jeans has been recorded.
+Agent: Let me notify our purchasing team about this.
+Customer: Thnx
+Action: The  Michael Kors jeans has been notified.
+Agent: I am very sorry for the inconvenience
+Agent: If you want, I coulf back-order them
+Customer: That would be great
+Agent: I will use the credit card associated with your account, if that is OK
+Customer: That's good
+Action: A purchase of  Michael Kors jeans was made.
+Agent: The jeans will go out to you asap - as soon as they are back in stock.
+Customer: Thanks!
+Agent: Is there anything else?
+Customer: That's it. Thnx
+Agent: OK thanks for being our customer & have a great day",6079,crystal minh,cminh837@email.com,(708) 082-9049,cminh837,0095 2nd ave,"0095 2nd ave  brighton, tx 27302",brighton,tx,27302,6001219043,0,Divya,No
+"Agent: Hello, how can I help you today?
+Customer: I ordered the wrong item on accident and would like to change my shipping order
+Agent: Glad to help. May I have your full name please?
+Customer: Sanya Afzal
+Agent: thanks Sanya.
+Action: Account has been pulled up for Sanya Afzal.
+Customer: welcome
+Agent: How many items did you order?
+Customer: two
+Agent: and do you want to cancel just one item and get refund?
+Customer: would like to change the shipping order
+Agent: How do you like to change the shipping order?
+Customer: I guess a refund since I order the wrong item on accident
+Agent: Got it.
+Agent: Can you please let me know your Account ID and Order ID to verify your identity?
+Customer: Account ID: RIWHDYYOW7
+Customer: Order ID: 3518719701
+Action: Identity verification in progress ...
+Agent: Perfect. What is the shipping status?
+Customer: Shipping Status: Delivered
+Agent: Okay, then what is your membership level?
+Customer: Guest
+Action: Shipping status of Delivered has been noted.
+Agent: Since you are a guest member and the item has been delivered, you have to wait until the item arrives.
+Agent: and call back to customer support to start the return process.
+Customer: okay, thank you for the information
+Agent: You are welcome. Is there anything else that I can help you with?
+Customer: That is everything
+Agent: Have a nice day!
+Customer: you too",10350,sanya afzal,sanyaafzal444@email.com,(362) 264-2966,sanyaafzal444,4525 kennedy st,"4525 kennedy st  newark, ca 30513",newark,ca,30513,3518719701,0,Divya,No
+"Agent: Hello, how may I help you?
+Customer: Hi, I returned an item and still have not received my refund on my account yet.
+Agent: Okay, can I have your full name please?
+Customer: Albert Sanders
+Action: Account has been pulled up for Albert Sanders.
+Agent: I will also need your username, email, and order ID.
+Customer: albertsanders552
+Customer: Order ID: 9427748620
+Customer: albertsanders552@email.com
+Action: Purchase validation in progress ...
+Agent: How long have you been waiting for the credit?
+Customer: 10 days
+Action: A reason of 10 days has been recorded.
+Action: Order has been updated with give credit.
+Agent: I have processed your account with the credit. It should be there now.
+Agent: Is there anything else you need today?
+Customer: thanks thats all
+Agent: Okay, have a nice day.
+Customer: you too",9842,albert sanders,albertsanders552@email.com,(348) 257-6469,albertsanders552,4390 primrose ave,"4390 primrose ave  monterey, ca 76448",monterey,ca,76448,9427748620,0,Divya,No
+"Agent: Hi, I'm Danny from ACME. How may I assist you today?
+Customer: Ugh, I'm so frustrated with the cost of shipping!
+Customer: I think I'm going to have to cancel my order. Shipping is just too high.
+Agent: I'm sorry to hear that. Let me look into your order. What is your full name, Order ID and Account ID
+Customer: Albert Sanders
+Customer: Order ID: 1232151371
+Action: Account has been pulled up for Albert Sanders.
+Customer: Account ID: TLSEVSRIO6
+Agent: All right, I also need your email and username to valiadate your order.
+Customer: Alberts6@email.com
+Customer: alberts6
+Action: Purchase validation in progress ...
+Agent: What's the status of your delivery?
+Customer: It was delivered.
+Agent: Seeing as it was delivered the best I can do is give you a partial refund of $8. Is that fine with you?
+Customer: Actually that would really help me a lot!
+Agent: Okay, sounds good. Give me one moment.
+Action: Shipping status of delivered has been noted.
+Action: A refund has been made for the amount of $8.
+Customer: Thanks so much.
+Agent: All right, you're all set. Have a nice day and thank you for shopping with ACME.",6410,albert sanders,alberts6@email.com,(722) 498-6428,alberts6,2788 lexington ave,"2788 lexington ave  raleigh, ca 65242",raleigh,ca,65242,1232151371,0,Alicia,No
+"Agent: Thank you for contacting AcmeBrands, how can I help you today?
+Customer: Hi.  My name is Rodriguez Domingo.  My Order ID is 3820840259.  I accidently ordered these Tommy Hilfiger boots for $94, is it too late to change this?
+Customer: I do not need them.
+Agent: OK, so you want me to see if we can still cancel these boots from your order?
+Customer: Yes please
+Action: Account has been pulled up for Rodriguez Domingo.
+Agent: Can I have your account ID please?
+Customer: Yes.  My account ID is 7QNVHV934G.
+Action: Identity verification in progress ...
+Agent: And what is the shipping status of your order?
+Customer: Out for Delivery.
+Action: Shipping status of Out for Delivery has been noted.
+Agent: OK, and what is your membership level?
+Customer: Guest
+Action: Membership level of Guest has been noted.
+Agent: As a guest, you are going to need to wait until the order has physically delivered to you.  Once it has, you can reach back out to customer service to start the return process.
+Agent: Is there anything else I can help you with today?
+Customer: I will do that thank you.
+Customer: That is it.
+Agent: Thank you, have a great day!",7407,rodriguez domingo,rd442504@email.com,(622) 096-0179,rd442504,0934 1st ave,"0934 1st ave  la fayette, wa 30103",la fayette,wa,30103,3820840259,0,Alicia,No
+"Agent: Hello, thank you for contacting AcmeCorp how may I help you?
+Customer: Hi, I need to return a jacket please, I got the wrong color
+Agent: I be happy to help. May I get your full name or account ID?
+Customer: Alessandro Pheonix
+Action: Account has been pulled up for Alessandro Pheonix.
+Agent: Thanks Alessandro, you just need to return this one item for wrong color?
+Customer: Yes please. Is that okay?
+Agent: Lets look. May I please have your username, email address, and Order ID?
+Customer: username is ap979465
+Customer: email  ap979465@email.com
+Customer: order id 0164150987
+Action: Purchase validation in progress ...
+Agent: May I have your membership level please?
+Customer: Guest
+Agent: When did you purchase this item?
+Customer: 2019-09-30
+Agent: Do you have the receipt?
+Customer: I'm afraid I don't
+Agent: Unfortunately because it is past 30 days and there is no receipt we cannot accept the return. I do sincerely apologize.
+Customer: Is there no way at all, a credit maybe instead of a refund?
+Agent: No I afraid not, I do apologize.
+Customer: Its ok, its not your fault. Thanks anyway though. Bye
+Agent: Is there anything else I can help you with?
+Customer: No, you've been great. Thanks. Bye
+Agent: Thanks for contacting us, I do apologize I was unable to help.",1938,alessandro phoenix,ap979465@email.com,(255) 103-3844,ap979465,7892 primrose ave,"7892 primrose ave  newark, mi 98030",newark,mi,98030,0164150987,0,Alicia,No
+"Agent: Hi.  How can I help you?
+Customer: HI! I ordered a shirt on November 2019 but it never came
+Agent: OK
+Customer: Can you check the status of my order
+Agent: Yes
+Agent: Can you tell me your name, your username, your email address, and an order ID?
+Customer: Albert Sanders
+Customer: Username: albertsanders284
+Customer: Email Address: albertsanders284@email.com
+Customer: Order ID: 9051381325
+Action: Account has been pulled up for Albert Sanders.
+Action: Purchase validation in progress ...
+Agent: Ok, I'll resend the shirt
+Agent: Which shirt is it?
+Customer: A michael Kors shirt
+Agent: Tell me your address and I'll send it
+Customer: 5363 1st Ave  La Fayette, CA 41615
+Action: Order has been updated with 5363 1st Ave La Fayette, CA 41615.
+Action: A purchase of Michael Kors Shirt was made.
+Agent: I've sent the shirt again
+Customer: Ok. I hope it won't take months this time
+Customer: Thank you
+Agent: It should take less than a week
+Agent: Is there anything else I can do for you today?
+Customer: Great
+Customer: That's all
+Customer: Thank you
+Agent: Ok, I'll end this chat now",10168,albert sanders,albertsanders284@email.com,(996) 961-3275,albertsanders284,5363 1st ave,"5363 1st ave  la fayette, ca 41615",la fayette,ca,41615,9051381325,0,Alicia,No
+"Agent: Hello, how can I help you?
+Customer: There should be a $100 refund applied to my account and I just wanted to make sure it's there.
+Agent: Sure, I can check on your refund status for you. What is your full name?
+Customer: Norman Bouchard
+Action: Account has been pulled up for Norman Bouchard.
+Agent: Alright, next I need your username, email address tied to your account, and the order ID that the refund is tied to.
+Customer: Username: normanbouchard727
+Customer: email:normanbouchard727@email.com
+Customer: Order ID: 2184392210
+Action: Purchase validation in progress ...
+Agent: Alright, I am seeing the refund on your account.
+Agent: It was initiated via chat is is currently applied to your account
+Customer: Thank you.  I have another item from that order I would like to return and have applied also.
+Agent: What is the product you want to initiate a refund on?
+Customer: The Michael Kors shirt on that same order #.  Price was $69
+Action: A reason of Michael Kors shirt has been recorded.
+Action: A refund has been made for the amount of $69.
+Agent: All set. I added an additional 69 dollars to the refund which puts a total of 169 dollars on your account
+Customer: Sweet!  Thank you!
+Agent: No problem. Is there anything else I can do for you?
+Customer: Not today.  Thank you!
+Agent: Have a great day.",3251,norman bouchard,normanbouchard727@email.com,(365) 495-8972,normanbouchard727,7082 brushwick dr,"7082 brushwick dr  la fayette, ny 518",la fayette,ny,518,2184392210,0,Alicia,No
+"Customer: hi
+Agent: Hello, how may I help you today?
+Customer: what's the status of my order?
+Agent: May I have your full name and account ID?
+Customer: Alessandro Phoenix
+Customer: 9YEFLDX3LG
+Action: Account has been pulled up for Alessandro Phoenix.
+Agent: What are you needing to know about your order status?
+Customer: why the shipping is so much
+Agent: Okay, may I have your order ID?
+Customer: 4271372830
+Action: Identity verification in progess ...
+Agent: Alright, do you mind telling me more about your shipping issue? For example, what you are wanting done?
+Customer: I might as well just get a refund at this point
+Agent: Okay, do you know what the status of your order is?
+Customer: It's here
+Action: Shipping status of Delivered  has been noted.
+Action: A refund has been made for the amount of $8.00.
+Agent: Your refund has been sent. Will that be all for today?
+Customer: yes that's fine
+Agent: Have a great day!",3191,alessandro phoenix,alessandrophoenix786@email.com,(722) 797-1721,alessandrophoenix786,6653 kennedy st,"6653 kennedy st  brighton, tx 57914",brighton,tx,57914,4271372830,0,Alicia,No
+"Agent: Hi, how can I help you?
+Customer: I’m not happy with the limited stock you seem to have
+Customer: I’ve tried 4 different times and everything in my size is out of stock.
+Customer: Alessandro Phoenix
+Agent: Sorry, to hear that Mr. Phoenix.
+Action: Account has been pulled up for Alessandro Phoenix.
+Customer: Why is there always issues with stock
+Agent: I can file a report with our purchasing dept. to help them do a better job.
+Customer: Yes that would be great but I’m still not happy
+Action: The purchasing department has been notified.
+Customer: When do you expect to have my Calvin boots size 8 in stock
+Agent: For your trouble, I can offer you a discount promo code. How does that sound?
+Agent: Is it just one item out of stock or several?
+Customer: That sounds good and fair
+Customer: Overall doesn’t matter
+Action: A promo code has been created.
+Agent: Here is the code BSSR8.
+Customer: Thanks
+Agent: Is there anything I can help you with?
+Customer: When do you expect my Calvin Klein boots to be in
+Agent: Is that the only item that was out of stock?
+Customer: No but it’s one I need by next week
+Agent: Okay, I understand. Let me check on that.
+Agent: I can back order the item for you, so when it's in stock it will ship immediately.
+Customer: Ok thanks
+Customer: Goodbye
+Agent: Would you like me to back order it for you?
+Customer: Yes
+Agent: Woudl you like me to charge the card on file?
+Customer: Yes please
+Action: A purchase of Calvin Klein Boots was made.
+Agent: Okay, I hope I was able to satisfy you. Is there anything else I can help you with?
+Customer: No ty
+Customer: Good bye
+Agent: You're welcome. Bye.",5773,alessandro phoenix,alessandrophoenix213@email.com,(135) 811-0819,alessandrophoenix213,4300 2nd ave,"4300 2nd ave  raleigh, wa 30874",raleigh,wa,30874,2865202191,0,Alicia,No
+"Agent: Thank you for contacting Acme Brands! How can I help you today?
+Customer: Hi I am calling in to complain because many items always seem to be out of stock.
+Agent: I'm sorry that items are currently out of stock. Could I please have your name or account ID?
+Customer: Name: Joseph Banter
+Action: Account has been pulled up for Joseph Banter.
+Agent: I'm writing our Purchasing Department to let them know that this has been an issue for you. The report will help them improve product availability in the future.
+Action: The purchasing department has been notified.
+Customer: Great thanks
+Agent: You're welcome. Is there anything else that I can help you with today Joseph?
+Customer: No but thank you
+Agent: You're welcome. I hope you enjoy your day!",10282,joseph banter,josephb0@email.com,(808) 639-5665,josephb0,9662 2nd ave,"9662 2nd ave  san mateo, ny 24787",san mateo,ny,24787,0700466341,0,Alicia,No
+"Agent: Hello, how may I help you today?
+Customer: You can help me, good sir or ma'am, by explaining why these Guess skinny jeans are TWICE the dollar amount on your site versus the competition! Madness!
+Customer: You will kindly do something about this immediately, or Sir Albert Sanders will patronize your store no longer!
+Agent: I'm very sorry about that, I'll check to see why these jeans are showing an expensive price for you.
+Action: Account has been pulled up for Albert Sanders.
+Customer: Finally, some competance! I appreciate your assistance.
+Action: A reason of competitor has been recorded.
+Agent: Have you already ordered the jeans by any chance?
+Agent: I'll need your account ID and order ID if so.
+Customer: Account ID: GTKNQYOUZ3
+Customer: Order ID: 3172582465
+Action: Identity verification in progress ...
+Agent: Unfortunately Mr. Sanders I cannot price match the competitors. Our prices are going up due to the economic troubles.
+Agent: I'm very sorry about that!
+Agent: Is there anything else I can do for you?
+Agent: Thank you for contacting AcmeBrands customer service, have a nice day.",6291,albert sanders,albertsanders957@email.com,(233) 419-2334,albertsanders957,7899 brushwick dr,"7899 brushwick dr  la fayette, ny 95379",la fayette,ny,95379,3172582465,0,Alicia,No
+"Agent: How can I help you?
+Customer: Good afternoon.
+Customer: I wanted to initiate a return of something I bought on your site because upon arrival, it appears to have what I believe to be a mustard stain on it
+Agent: Oh no, sorry about that. Can I have your name to pull up your account?
+Customer: Sure. My name is Chloe Zhang
+Action: Account has been pulled up for Chloe Zhang.
+Agent: I need to validate your purchase, can I have your username, email and order ID?
+Customer: Sure. My username is chloezhang675.
+Customer: My email address is chloezhang675@email.com
+Customer: And the order ID is 1592434612
+Action: Purchase validation in progress ...
+Agent: Thanks, and can I have your membership level?
+Customer: I have gold membership
+Action: Membership level of gold has been noted.
+Agent: Great, our Gold Members are allowed unlimited returns. Can I have your address to generate a shipping label?
+Customer: Sure. It is 6086 Brushwick Dr  Newark, CA 31706
+Action: Details of  6086 Brushwick Dr Newark, CA 31706 have been entered.
+Agent: And how would you like to return the item?
+Customer: Is it possible to make the return by mail?
+Action: Order has been updated with By Mail.
+Agent: Yes, just print the label out and return it by mail. Can I assist with anything else today?
+Customer: Okay perfect.
+Customer: Thanks a lot
+Customer: no, that will be all",9657,chloe zhang,chloezhang675@email.com,(028) 848-2608,chloezhang675,6086 brushwick dr,"6086 brushwick dr  newark, ca 31706",newark,ca,31706,1592434612,0,Alicia,No
+"Agent: Hello, how can I help you
+Customer: I want to check on the status of my refund because I'd like to add an item below to my existing refund.
+Customer: I didn't realize this jacket was also damaged in the shipment. SO i need to add it to my refund
+Agent: Let me check on that for you
+Customer: My name is Crystal Minh
+Customer: Email Address: cminh625@email.com  Username: cminh625
+Customer: Order ID: 1691421347
+Action: Account has been pulled up for Crystal Minh.
+Agent: THank you, let me validate your purchase, give me a couple seconds
+Action: Purchase validation in progress ...
+Agent: What is the brand and type of item?
+Customer: Guess Jacket for $49.00
+Action: A reason of Guess Jacket has been recorded.
+Agent: What was your old refund amount? This way I can add the $49 to that amount
+Customer: 100.00
+Action: A refund has been made for the amount of $149.
+Agent: Thanks, I have update your refund to $149. Anything else you need?
+Customer: Thanks that's all I needed.
+Agent: Have a great day",6586,crystal minh,cminh625@email.com,(886) 221-7435,cminh625,6473 circle drive,"6473 circle drive  monterey, mi 85695",monterey,mi,85695,1691421347,0,Alicia,No
+"Agent: Hello! Thanks for contacting Acme customer support. How may I help you today?
+Customer: Hi
+Customer: Yesterday i saw that the pants i want to buy were much cheaper than they are today
+Agent: I can look into that for you. May I get your full name?
+Customer: Albert Sanders
+Agent: One moment while I pull up your account.
+Action: Account has been pulled up for Albert Sanders.
+Agent: And you saw a lower price on this item yesterday, is that correct?
+Customer: Yes
+Action: A reason of  yesterday has been recorded.
+Customer: Item Jeans
+Customer: Brand Guess
+Customer: currently they are 74
+Customer: and yesterday they were 67
+Agent: I see. I just need to verify a few things. Can I get your Account ID and Order ID.
+Customer: ZAFU75JHBF
+Customer: Order id - 6436437019
+Action: Identity verification in progress ...
+Agent: Unfortunately, you are correct that the price has changed. Our pricing is dynamic and sometimes does change from day to day.
+Customer: so what can be done about that
+Customer: can i get the 67$ price
+Agent: Let me see if there is something that I can do for you, just one moment.
+Customer: or at least meet me in the middle of 70.5
+Agent: Great news! I can offer you a promo code that we only give to our most preferred customers!
+Action: A promo code has been created.
+Agent: Here is the code for you to use: 55B1L
+Customer: cool
+Agent: Is there anything else that I can do to help today?
+Customer: that will get me the 67$ price?
+Agent: Yes, it's a 20%  discount. I think you'll be very happy with your price.
+Customer: perfect, thanks!
+Customer: thats all i needed
+Agent: Have a great day and we appreciate you choosing Acme.",6124,albert sanders,alberts1@email.com,(967) 965-6485,alberts1,2152 1st ave,"2152 1st ave  san lima, ny 50138",san lima,ny,50138,6436437019,0,Alicia,No
+"Agent: Hello, this is Stephanie from ACME. How may I assist you today?
+Customer: Hello, I was checking on the order than I received, because I got an email stating I would get another item
+Agent: Okay, let me look into this. May I get your full name and account ID?
+Customer: My name is David Williams
+Customer: My account id is YEZAZCLU0F
+Action: Account has been pulled up for David Williams.
+Agent: What is your order ID?
+Customer: It is 1273355181
+Action: Identity verification in progress ...
+Agent: All right. Now I need your username and email.
+Customer: My email address is davidwilliams185@email.com and my username is davidwilliams185
+Action: Purchase validation in progress ...
+Agent: Just to make sure I have this right, you received an email stating that you are to receive the wrong item? Or is it an extra item?
+Customer: It seems to be the wrong item
+Agent: Okay.
+Action: Querying the system for an answer ...
+Customer: I was expecting a pair of Guess boots
+Agent: Okay, it looks like there was an error with your order. I will change it right now. I'm so sorry for this mistake.
+Action: Order has been updated with change item.
+Customer: Ahh okay
+Customer: Thanks for looking into it
+Agent: All right. I've changed the item to the pair of Guess boots you originally ordered. Once again, we are sorry about this error.
+Customer: Thank you for fixing that
+Agent: Is there anything else I can do for you?
+Customer: I will send the other item back
+Customer: I appreciate your help
+Customer: That is all for today
+Agent: Have a great day! Thank you for being a ACME customer.",9211,david williams,davidwilliams185@email.com,(186) 228-7071,davidwilliams185,3873 primrose ave,"3873 primrose ave  monterey, tx 29265",monterey,tx,29265,1273355181,0,Alicia,No
+"Agent: Hi! how can I help you today?
+Customer: good day agent i'm David
+Agent: How can I help you, David?
+Customer: purchased an item and would love a refund got the wrong size
+Customer: would love cancel and get a refund before it ships
+Agent: Okay, what is your full name, username, email address, and order ID?
+Customer: David Williams,
+Customer: (720) 986-4183
+Action: Account has been pulled up for David Williams.
+Customer: davidw62@email.com
+Customer: Order ID: 7757173038
+Action: Purchase validation in progress ...
+Agent: And what is the shipping status on the order?
+Customer: pending shipping
+Customer: that is why i need to get the refund before it ships out
+Agent: Okay, perfect. And how would you like to process your refund? Gift card, account credit, paper check, or to the credit card used for the order?
+Customer: the credit card is preferable
+Agent: And what is your account ID?
+Customer: Account ID: 0RT8GEWVCU
+Agent: And what was the cost of the item?
+Action: Details of credit card 0RT8GEWVCU have been entered.
+Customer: $59
+Action: A refund has been made for the amount of $59.
+Agent: Okay, I have cancelled your order and your card has been refunded. Can I help you with anything else today?
+Customer: thanks
+Customer: none
+Agent: You're welcome! Have a great day.",8799,david williams,davidw62@email.com,(720) 986-4183,davidw62,7653 2nd ave,"7653 2nd ave  newark, ny 32687",newark,ny,32687,7757173038,0,Alicia,No
+"Agent: Hello, how can I help today?
+Customer: Hi!
+Customer: I actually have a quick question
+Agent: Sure thing.
+Customer: I wanted to check the details of the cost of shipping?
+Customer: I feel like my shipping fee is really high
+Agent: So you currently have an order and feel like the shipping cost is high?
+Customer: Yes
+Agent: Can i start with your full name?
+Customer: Are there any deals or anything?
+Customer: Crystal Minh
+Action: Account has been pulled up for Crystal Minh.
+Agent: Ill see what I can do.
+Agent: Just making sure you already placed the order or it has not been placed?
+Customer: Yes, I already placed the order
+Customer: I see the status as ""order received.""
+Agent: Alright, were you possibly looking to downgrade the shipping?
+Customer: Whatever would make it less expensive
+Customer: Would I receive the item later?
+Agent: In that case if you did yes
+Customer: How much later?
+Agent: a few days usually
+Agent: Would you prefer to delay it then or were you more looking for something else?
+Customer: I guess that would be fine then.
+Customer: I actually really need the item soon.
+Customer: But I can figure something out.
+Agent: Can I then have the account id and order id?
+Customer: Account ID is UPYD6FJWSA
+Customer: Order ID is 0822783454
+Action: Identity verification in progress ...
+Action: Shipping status of order recieved has been noted.
+Agent: I was able to pull that up, can you tell me your member level?
+Customer: Bronze
+Action: Membership level of bronze has been noted.
+Agent: As it has not shipped yet I am able to credit the amount back for the fee.
+Customer: Oh that would be great!
+Agent: Alright, that will be taken care of from my end.
+Customer: Okay
+Action: Order has been updated with .
+Action: Order has been updated with next week.
+Agent: I also changed the shipping as mentioned earlier, now that it is all done can I help with anything else?
+Customer: No, that would be all.
+Customer: THank you for your help
+Agent: Have a great day",10502,crystal minh,cminh588@email.com,(750) 426-3214,cminh588,3247 1st ave,"3247 1st ave  newark, mi 9682",newark,mi,9682,0822783454,0,Alicia,No
+"Agent: Hi, How can I help you today?
+Customer: Hi! I ordered a pair of jeans 2 weeks ago but I haven't received it yet. Can you check the status of the item?
+Agent: May I have your name.
+Customer:  Chloe Zhang
+Action: Identity verification in progress ...
+Agent: Can I please also get your username, email address and the order id?
+Customer: In fact, I just looked at the receipt, I bought it on december 29th 2019
+Customer: chloez94
+Customer: My email is chloez94@email.com
+Customer: Order ID: 9126379156
+Action: Purchase validation in progress ...
+Agent: How long have you been waiting for the jeans?
+Customer: so it has been almost 4 months
+Action: A reason of 4 months has been recorded.
+Agent: i apologize for the inconvenience, we will ship a new order for you.
+Agent: Can I please have your address?
+Customer: 8868 Kennedy St  San Lima, WA 11935
+Agent: Thank you.
+Action: Order has been updated with 8868 Kennedy St San Lima, WA 11935.
+Agent: Can I have the name of the product along with the brand?
+Customer: It is Guess jeans
+Customer: the price is $89
+Action: A purchase of Guess jeans was made.
+Agent: Thank you. I have made a new purchase for you.
+Agent: The order should come very soon to you.
+Customer: Great. I hope so..
+Agent: Do you need help on anything else?
+Customer: That's all
+Customer: thanks
+Agent: Have a great day!",5555,chloe zhang,chloez94@email.com,(666) 098-8762,chloez94,8868 kennedy st,"8868 kennedy st  san lima, wa 11935",san lima,wa,11935,9126379156,0,Ariji,No
+"Agent: Hello, how are you doing today?
+Customer: I could be better.  It seems I was charged for an order I never placed.
+Agent: I'm sorry, let me look into that for you! What is your name?
+Customer: David Williams
+Action: Account has been pulled up for David Williams.
+Agent: Thank you, can I also please have your username, email address, and order ID?
+Customer: dwilliams898
+Customer: dwilliams898@email.com
+Customer: Order ID: 2257571553
+Action: Purchase validation in progress ...
+Action: Querying the system for an answer ...
+Agent: What is your membership level David?
+Customer: Gold
+Action: Membership level of gold has been noted.
+Agent: Thank you for being a loyal shopper! Let me get that amount refunded for you.
+Action: Order has been updated with give credit.
+Agent: That charge should be refunded for you now. Is there anything else I can help you with today?
+Customer: Thank you
+Customer: No that is all.
+Agent: You're welcome, have a good day!",7368,david williams,dwilliams898@email.com,(723) 051-4042,dwilliams898,6617 1st ave,"6617 1st ave  jacksonville, wa 2778",jacksonville,wa,2778,2257571553,0,Ariji,No
+"Agent: Hi! How can I help you?
+Customer: Hi
+Customer: I want to know why you guys still haven't refunded me
+Customer: even though I already returned my order last week
+Agent: I'm sorry you haven't received your refund yet. I would be happy to look into this for you. You're saying it was over 7 days ago that you returned the item, correct?
+Customer: yes
+Agent: Okay, what is your full name?
+Customer: Chloe Zhang
+Agent: Thank you, Chloe. I also need your username, email address, and Order ID, please.
+Action: Account has been pulled up for Chloe Zhang.
+Customer: username czhang28
+Customer: czhang28@email.com
+Customer: and order id 2269137343
+Action: Purchase validation in progress ...
+Action: A reason of more than 7 days has been recorded.
+Action: Order has been updated with give credit.
+Agent: I have issued your refund to you. It should show up in 2-5 business days. I'm sorry that you've had to wait, but I'm glad you contacted us so that I could resolve this for you.
+Agent: Is there anything else I can help you with today?
+Customer: oh thank you
+Customer: no, that was all
+Agent: Okay, you're welcome! Have a great day.",5492,chloe zhang,czhang28@email.com,(350) 816-3420,czhang28,2354 kennedy st,"2354 kennedy st  san mateo, mi 11890",san mateo,mi,11890,2269137343,0,Ariji,No
+"Agent: Hello! How can I help you today?
+Customer: Hi, I am wondering about the state of my refund.
+Agent: Sure. I can help you with your refund!
+Agent: can I have your full name or account ID please
+Customer: Sanya Afzal
+Action: Account has been pulled up for Sanya Afzal.
+Agent: Alright, I have your account pulled up.
+Agent: can I also have your username, email address and order ID please
+Customer: all I have is the email of safzal41@email.com
+Agent: I'm not able to check on your refund status without your username and order ID
+Agent: It should be under product details
+Agent: Are you still there?",524,sanya afzal,safzal41@email.com,(672) 296-6225,safzal41,2580 1st ave,"2580 1st ave  monterey, wa 63768",monterey,wa,63768,2647151719,0,Ariji,No
+"Agent: AcmeBrands, how may I help you?
+Customer: Hello, I'm checking in on my order as the shipping status says I got it, and I haven't received it yet.
+Agent: Let me find out for you.
+Agent: Could I have your full name or account id?
+Customer: David Williams
+Customer: INYRNT6CK8 is my ID
+Action: Account has been pulled up for David Williams.
+Agent: Could I have your username, email address and order id to validate your purchase?
+Customer: davidw22@email.com
+Customer: Username: davidw22
+Customer: Order ID: 3432812454
+Action: Purchase validation in progress ...
+Agent: Thank you
+Agent: How many days have you been waiting for your product to arrive?
+Customer: Its been 5 days now
+Action: A reason of  has been recorded.
+Action: A reason of 5 has been recorded.
+Agent: Sometimes packages are mistakenly marked as delivered but are still on their way.
+Agent: If it hasn't arrived in 2 days
+Agent: please let us know
+Customer: Do you think you can resend the order now?
+Agent: It hasn't been long enough
+Agent: If it hasn't arrived in two days, then contact  us so that we can resend
+Customer: Oh ok, I can wait 2 more days.  Thought I would check
+Agent: Can I help you with anything else?
+Customer: That sounds good.  That's all for today, thank you!
+Agent: Have a good day.",7356,david williams,davidw22@email.com,(157) 469-6975,davidw22,6055 2nd ave,"6055 2nd ave  jacksonville, mi 87712",jacksonville,mi,87712,3432812454,0,Ariji,No
+"Agent: Hi, there.  How may I help you?
+Customer: I have a promo code, but it says it's invalid.
+Agent: Okay, I can check on that for you.
+Agent: What is your name?
+Customer: David Williams
+Action: Account has been pulled up for David Williams.
+Agent: Do you have the date the promo code was issued?
+Customer: it was about 9 days ago
+Agent: Okay, I am going to check the system regarding the error.
+Customer: okay
+Action: Querying the system for an answer ...
+Agent: Okay, the system says that there was an error regarding the promo code.
+Agent: What is your membership level?
+Customer: silver
+Action: Membership level of silver has been noted.
+Action: A promo code has been created.
+Customer: great, thanks
+Agent: Here is a new promo code  VWOQW
+Customer: okay, thanks
+Agent: You're welcome.  Is there anything else I can help you with today?
+Customer: that's all, thanks
+Agent: Have a great day!",8273,david williams,dwilliams885@email.com,(435) 181-0118,dwilliams885,6104 lexington ave,"6104 lexington ave  brighton, tx 20833",brighton,tx,20833,2670015345,0,Ariji,No
+"Customer: hello
+Agent: How may I help you?
+Customer: I need to remove an item from my order
+Agent: Can you give me your full name or account id?
+Customer: Yeah I can do that
+Customer: my name is David Williams
+Customer: and my account ID is DJOXMO0VLI
+Action: Account has been pulled up for David Williams.
+Agent: Can I have the order id?
+Customer: yeah
+Customer: Account ID: DJOXMO0VLI
+Customer: Order ID: 0308241548
+Customer: is that correct?
+Action: Identity verification in progess ...
+Agent: Yes.. I have verified you identity
+Agent: Please what is the shipping status of this order?
+Customer: The shipping status is in transit
+Action: Shipping status of in transit has been noted.
+Agent: What is your membership level?
+Customer: Its silver
+Action: Membership level of silver has been noted.
+Agent: I can offer a refund immediately. Once the item arrives, you juts need to call the customer care for the shipping label for return.
+Customer: Ok that is really helpful so I will just return it as soon as it gets home,
+Agent: What is the cost of the item that is meant to be returned?
+Agent: yes
+Customer: the cost is 74 dollars
+Action: A refund has been made for the amount of $74.
+Customer: ok thanks
+Customer: I guess thats it then
+Customer: have a good day
+Agent: Yes. I wish you a great day",3227,david williams,NA,(338) 819-1856,NA,4426 circle drive,"4426 circle drive  la fayette, ca 13018",la fayette,ca,13018,0308241548,1,Ariji,No
+"Agent: AcmeBrands, how may I help you?
+Customer: Hi I have an issue with my shopping cart
+Agent: What is your issue with the shopping cart?
+Customer: I've been trying to add some jeans but my cart isn't updatinng with it
+Agent: Let me help you with that.
+Customer: ok
+Action: Agent is looking for solutions ...
+Agent: Can you refresh the page and try again?
+Customer: Hold on let me try
+Customer: no it didn't work
+Agent: Ok
+Action: Agent is looking for solutions ...
+Agent: Can you log out and then log back in, and try to add the item to the cart again?
+Customer: ok hold onn
+Customer: hey that worked!
+Customer: that seems strange no?
+Agent: Thats great that it worked.
+Agent: No, it happens once it a while.
+Customer: oh ok gotcha
+Agent: Can I help you with anything else?
+Customer: that's it thanks!
+Agent: Have a good day",3857,joyce wu,joycew99@email.com,(370) 686-7348,joycew99,7787 kennedy st,"7787 kennedy st  monterey, ny 43189",monterey,ny,43189,NA,1,Ariji,No
+"Agent: Hi, how can I help you?
+Customer: I would like to know more about a product because I am thinking of buying it.
+Agent: Okay sure.
+Agent: What product were you looking at?
+Customer: Product: boots  Brand: Michael_Kors  Amount: $59
+Agent: Okay, and what did you want to know about the boots
+Customer: I want to know if the boots are waterproof
+Action: Searching the FAQ pages ...
+Agent: Sure, let me look into that
+Action: System Action: search boots
+Agent: Yes they are waterproof.
+Customer: Okay
+Agent: Do you have any other questions?
+Customer: No
+Agent: Okay, hope you enjoy the boots!\
+Agent: Have a nice day",9070,chloe zhang,NA,(105) 999-2500,NA,8537 1st ave,"8537 1st ave  san lima, tx 27859",san lima,tx,27859,NA,1,Ariji,No
+"Agent: Hello, how can I help you today?
+Customer: i needed to check something on a past order but i couldn't as i was unable to log in.
+Agent: And why is that?
+Customer: i forgot my username.
+Agent: Okay, can I have your full name?
+Customer: Joyce Wu
+Action: Account has been pulled up for Joyce Wu.
+Agent: And your Zip code and email?
+Customer: 47108 jwu@email.com
+Action: Identity verification in progress ...
+Agent: Okay, your username is jwu1
+Agent: Is there anything else I can do for you today?
+Customer: ok.  i'll try logging in again.
+Customer: that should be all i need.
+Agent: Then have a nice day!",7031,joyce wu,NA,(290) 785-0134,NA,5125 kennedy st,"5125 kennedy st  la fayette, ca 47108",la fayette,ca,47108,NA,1,Ariji,No
+"Agent: Hello, how can i help you
+Customer: I want to upgrade my shipping status to overnight
+Agent: I will be happy to help you with that.
+Agent: Can i get your full name.
+Customer: Crystal Minh
+Action: Account has been pulled up for Crystal Minh.
+Agent: I found your account crystal. Now can i get your account id and order id?
+Customer: account id is NVYMS0FBPE and order is 9341523388
+Action: Identity verification in progress ...
+Agent: I verified your identity now can i get your shipping status
+Customer: In Transit
+Action: Shipping status of in transit has been noted.
+Agent: Unfortunately since it has already shipped I will be unable to upgrade it.
+Agent: However there is a chance it could arrive tomorrow anyway.
+Agent: I apologize for the incovience.
+Agent: Can i help you with anything else?
+Customer: no
+Agent: have a great day.",5145,crystal minh,NA,(671) 699-1958,NA,3683 woodshore st,"3683 woodshore st  newark, tx 40876",newark,tx,40876,9341523388,1,Ariji,No
+"Agent: Hello. How may I help you today?
+Customer: hello
+Agent: Hello. How may I help you today?
+Customer: Can you tell me how I can cancel my subscription?
+Action: Searching the FAQ pages ...
+Action: System Action: search membership
+Action: System Action: search policy
+Agent: Do you want to know how to cancel or what happens if you cancel?
+Action: System Action: search membership
+Customer: both please
+Agent: Lets start with the most important one first.
+Agent: Which one do you need to know about?
+Customer: I want to know how to cancel my subscription and what happens if I cancel it
+Agent: Well if you cancel you can do that at anytime. Your benefits will last through the end of the month.
+Agent: Anything else I can help you with?
+Action: FAQ answer related to policy (question3) was selected.
+Customer: no. that was all
+Agent: Great. Have a nice day.",9626,david williams,NA,(669) 814-2257,NA,5535 lincoln ave,"5535 lincoln ave  baltimore, tx 99127",baltimore,tx,99127,NA,1,Ariji,No
+"Agent: Hi! Thank you for contacting us today. How may I help you?
+Customer: Hi. I want to change the delivery type of my order
+Agent: I will be happy to assist with that.  When you say delivery type, do you mean you want to change shipping speed?
+Customer: yes
+Agent: Can I start with your full name so I can pull up your account?
+Customer: Joseph Banter
+Action: Account has been pulled up for Joseph Banter.
+Agent: Can I also have your account id and order id?
+Customer: my account ID is BVQM7J2IWT. order ID is 4945984328
+Action: Identity verification in progess ...
+Agent: Thank you for all the information.  What are you trying to change your delivery too?
+Customer: I want faster delivery
+Agent: Can you provide me with your shipping status?
+Customer: It says the order was received
+Agent: Can you provide me with your membership level?
+Agent: Are you still there?",1602,joseph banter,NA,(432) 400-7715,NA,8696 woodshore st,"8696 woodshore st  la fayette, wa 5735",la fayette,wa,5735,4945984328,1,Ariji,No
+"Customer: Hi
+Agent: Hi, how may I help you?
+Customer: I was trying to search for a few items but the search results are totally unrealted
+Customer: It is very frustrating. am not sure what is going on
+Agent: that sounds frustrating. I should be able to help
+Customer: Thank you
+Agent: You're welcome
+Agent: First let me write up a report so our internal website team is notified of the issue
+Action: The website team has been notified.
+Agent: Ok, next can you try logging out of your account and then logging back in
+Agent: sometimes this will fix the problem
+Action: Agent is looking for solutions ...
+Customer: That did not help. Sorry
+Customer: any other ideas?
+Agent: Yes, can you clear the cookies on your browser? This often fixes the search issue
+Agent: I can explain how if you need me to
+Customer: Sure. Let me try doing that
+Agent: ok
+Action: Agent is looking for solutions ...
+Agent: did clearing the cookies work?
+Customer: Yes it did
+Customer: thank you so much for your help
+Agent: Great!
+Agent: you're welcome
+Agent: Can I help with anything else?
+Agent: Have a great day!
+Customer: thats all
+Customer: Thank you",6335,joseph banter,josephb8@email.com,(866) 622-2726,josephb8,6662 1st ave,"6662 1st ave  san mateo, ca 7859",san mateo,ca,7859,NA,1,Ariji,No
+"Agent: Hello, how can I help you?
+Customer: Hi! Can you tell me about the return policy? I was thinking of buying a few things, but I want to make sure that I can return them if they don't fit.
+Agent: Sure
+Action: Searching the FAQ pages ...
+Action: System Action: search policy
+Agent: The policy on returns depends on your membership level. Gold members are allowed unlimited returns. Silver members are allowed returns for purchases made in the last 6 months.
+Agent: Bronze members are allowed returns for purchases made in the last 90 days. All other membrs are allowed returns for purchases made in the last 30 days.
+Agent: Is there anything else I can help you with?
+Customer: Awesome! That's great. Thank you for your help. That's all.
+Agent: Have a great day!",5969,sanya afzal,NA,(504) 275-4266,NA,5466 primrose ave,"5466 primrose ave  raleigh, ca 10052",raleigh,ca,10052,NA,1,Ariji,No
+"Agent: Thank you for shopping with AcmeBrands! How can I help you?
+Customer: Could you tell me what material the Guess jacket is made out of?
+Agent: Sure! Let me pull up the information.
+Action: Searching the FAQ pages ...
+Action: System Action: search jacket
+Agent: The outside is made out of synthetic materials like nylon, tricot, and polyester to make sure it is windproof. The inside is lined with cotton for insulation. This helps it keep as much of your body heat as possible.
+Customer: Thank you!
+Agent: Is there anything else you need?
+Action: FAQ answer related to jacket (other4) was selected.
+Customer: I think that is all for today
+Agent: Okay. Have a nice day!",2840,joyce wu,NA,(708) 271-2732,NA,6195 lincoln ave,"6195 lincoln ave  brighton, ca 40389",brighton,ca,40389,NA,1,Aryaman,No
+"Agent: Hello, how can I help you?
+Customer: Hi! I would like to upgrade my order to overnight delivery please. I realized I need the item sooner than I thought
+Customer: I was hoping you could help me with it
+Agent: Okay, can I get your full name, account ID, and order ID?
+Customer: Alessandro Phoenix
+Agent: Also, do you know the shipping status of your order?
+Action: Account has been pulled up for Alessandro Phoenix.
+Customer: Order ID: 9249675610
+Customer: Account ID: OV2SGXQHVX
+Customer: It says in transit
+Action: Identity verification in progress ...
+Agent: I'm sorry, if the status is in transit, the item has already been shipped, so we can't make it any faster
+Agent: But the good news is that it will probably get there today or tomorrow
+Agent: Is there anything else I can help you with?
+Customer: That is all. Thank you for your help.
+Agent: Okay, have a great day!",8820,alessandro phoenix,NA,(496) 530-0049,NA,2515 circle drive,"2515 circle drive  newark, mi 4852",newark,mi,4852,9249675610,1,Aryaman,No
+"Customer: My spouse decided she did not want the second item I had ordered, can that be removed?
+Agent: Yes, if it's not already shipped?
+Customer: it is in transit
+Agent: Can you tell me your name, your account ID, and the order ID?
+Customer:  Chloe Zhang
+Customer: 1GXUVBJ3PJ 7302235476
+Action: Account has been pulled up for Chloe Zhang.
+Agent: What's your membership level?
+Customer: Guest
+Action: Identity verification in progress ...
+Agent: Since the package has already been sent you'll have to wait until you get it and then return it
+Customer: I see
+Customer: thanks for letting me know
+Agent: Is there anything else I can do for you today?
+Customer: thats all thanks
+Agent: Ok, I'll end this chat now",10139,chloe zhang,NA,(252) 847-7244,NA,6240 kennedy st,"6240 kennedy st  la fayette, tx 26146",la fayette,tx,26146,7302235476,1,Aryaman,No
+"Agent: Hello, thank you for contacting us today. How can I help you?
+Customer: I want to make sure that my subscription is active
+Agent: Alright, I'm sure I can help with that. Was there anything specific about the status you needed to know such as the due date or amount due? Or maybe payign the bill today?
+Customer: yes, I may need to pay my subscription. Will you be able to help me with that?
+Agent: I'll definitely be able to help with that.
+Agent: Can I please have your Full name or account ID in order to pull up your account?
+Customer: Joyce Wu
+Action: Account has been pulled up for Joyce Wu.
+Customer: Account ID: THNN2QFLLZ
+Agent: Alright thank you and thank you for providing the account ID, can I also have the Order ID please?
+Customer: Order ID: 1625516108
+Action: Identity verification in progess ...
+Agent: Alright thank you, I was able to verify your identity with the system.
+Agent: Let me look up the status of the subscription for you.
+Action: Querying the system for subscription status ...
+Agent: Alright it looks like the bill may have already been payed. Your subscription is listed as active with no amount due.
+Agent: And the bill was due today so you shopuld be in the clear.
+Customer: oh that is good to know. So, it was due today but I don't owe anything?
+Agent: Yes that's correct
+Customer: huh. well that sounds good to me. that is all I needed today, thanks
+Agent: Not a problem. I hope you have a great day!",1679,joyce wu,NA,(242) 078-5977,NA,4293 primrose ave,"4293 primrose ave  raleigh, wa 11087",raleigh,wa,11087,1625516108,1,Aryaman,No
+"Agent: Hi! How can I help you today?
+Customer: hi
+Customer: I'm thinking of buying something
+Customer: but I have a question
+Customer: Does the Tommy Hilfiger jacket shrink after washing?
+Action: Searching the FAQ pages ...
+Action: System Action: search jacket
+Agent: No, this jacket is made of high-quality fabric that won't shrink after washing. You should be careful not to over-dry it. We recommend either line drying it or putting it in a dryer with low heat.
+Action: FAQ answer related to jacket (other1) was selected.
+Agent: Is there anything else I can help you with today?
+Customer: No, that's everything. Thank you!
+Agent: You're welcome! have a great day",10483,albert sanders,NA,(861) 346-4212,NA,7402 2nd ave,"7402 2nd ave  monterey, ny 97545",monterey,ny,97545,NA,1,Aryaman,No
+"Agent: hello, how  an i help you
+Customer: Hello, I would like to know if the Tommy Hilfiger boots are in stock for a size 9? The website says they are unavailable
+Action: Searching the FAQ pages ...
+Action: System Action: search boots
+Agent: I will be happy to answer your question. If they are listed as unavailable that means they are not currently available or are out of stock.
+Action: FAQ answer related to boots (other3) was selected.
+Customer: Oh ok I see
+Agent: Do you need anymore help?
+Customer: That is it
+Customer: thanks
+Agent: Have a great day.",8881,david williams,NA,(683) 549-4514,NA,0350 brushwick dr,"0350 brushwick dr  monterey, wa 10244",monterey,wa,10244,NA,1,Aryaman,No
+"Agent: Hello. How may I help you today?
+Customer: The delivery time is wrong.
+Agent: I see. Can I have your name?
+Customer: Chloe Zhang
+Action: A refund has been made for the amount of $.
+Action: Account has been pulled up for Chloe Zhang.
+Agent: On moment please Chloe.
+Agent: Can I have your account ID and Order ID?
+Customer: BFN6ACL5TA,6415646767
+Action: Identity verification in progress ...
+Agent: Ok Now what is it that you would like to do?
+Customer: change delivery time to evening
+Agent: What time is it set for now?
+Customer: morning
+Action: Querying the system for an answer ...
+Agent: And what is the shipping status?
+Customer: In Transit
+Agent: Since it is already in transit it is too late to change the delivery time.
+Customer: ok, I understand.
+Agent: Anything else I can help you with?
+Customer: no
+Agent: Great. Have a nice day.",9578,chloe zhang,NA,(519) 646-1005,NA,3455 brushwick dr,"3455 brushwick dr  newark, wa 19006",newark,wa,19006,6415646767,1,Aryaman,No
+"Agent: Hello! Thank you so much for choosing AcmeBrands. How may I assist you?
+Customer: I was curious if a shirt would shrink after watching
+Customer: it was made by tommy hilfiger
+Agent: I'll be glad to help you with that! One moment, please.
+Action: Searching the FAQ pages ...
+Action: System Action: search shirt
+Action: FAQ answer related to shirt (other1) was selected.
+Agent: Our recommendation is that you wash your shirt in cold water, as hot water has the tendency to shrink the fabric.
+Customer: so that would alleviate the concern then?
+Agent: The same goes with drying: line/air drying or using a lower heat setting on your dryer will be really beneficial.
+Agent: Yes, using a cold water wash should go a long way to alleviate potential shrinking.
+Customer: alright thanks for the info
+Agent: Is there anything more I may help you with today?
+Customer: no that was all
+Agent: Thank you so much for contacting AcmeBrands customer service. Goodbye!",5136,joseph banter,NA,(095) 083-9949,NA,1636 circle drive,"1636 circle drive  baltimore, ca 37640",baltimore,ca,37640,NA,1,Aryaman,No
+"Agent: Hello, how may I help you today?
+Customer: can you check the status of my order because the payment method looks to be wrong?
+Agent: Sure, one moment please.
+Agent: Can you please tell me your full name, account ID, and order ID?
+Customer: Order ID: 3263542057
+Customer: Name: David Williams
+Customer: Account ID: 5SUJMTWWAG
+Action: Account has been pulled up for David Williams.
+Agent: Thank you
+Action: Identity verification in progess ...
+Agent: Can you please tell me the shipping status of your order?
+Customer: oyr for delivery
+Customer: out for delivery
+Agent: Because the order is already out for delivery, I am unable to change your payment method for this order.
+Customer: okay then
+Agent: However, I can still change your payment method for future orders.
+Agent: Would you like to change your payment method?
+Customer: no
+Agent: Is there anything else I can help you with today?
+Customer: no
+Agent: Thank you. Have a great day!
+Customer: bye
+Action: Shipping status of Out for Delivery has been noted.
+Customer: are we done?
+Agent: Yes
+Agent: Bye",1890,david williams,NA,(529) 774-0122,NA,1382 1st ave,"1382 1st ave  la fayette, ca 67432",la fayette,ca,67432,3263542057,1,Aryaman,No
+"Agent: Hello, how can I help you today?
+Customer: I went ahead and signed up for the premium subscription, I was charged twice though and want the second refunded
+Agent: Glad to help. May I have your full name please?
+Customer:  Chloe Zhang
+Agent: thanks Chloe.
+Agent: Can you please let me know your Account ID and Order ID to verify your identity?
+Customer: CXTHNDWKUD 2294113058
+Action: Account has been pulled up for Chloe Zhang.
+Action: Identity verification in progress ...
+Agent: Perfect. I also need your membership level to proceed further, please.
+Customer: Gold
+Action: Membership level of Gold has been noted.
+Agent: I am going to process the refund for you.
+Customer: I appreciate the help
+Agent: How much is the amount?
+Customer: 40$
+Action: A refund has been made for the amount of $40.
+Agent: a refund of $40 has been made to your account.
+Agent: Is there anything else that I can help you with?
+Customer: that was all thanks
+Agent: Have a nice day!",7814,chloe zhang,NA,(782) 053-6654,NA,2112 woodshore st,"2112 woodshore st  newark, tx 23522",newark,tx,23522,2294113058,1,Aryaman,No
+"Agent: hello, how can I help you today?
+Customer: Hi There. I forgot my username. Please help me.
+Agent: No problem, may I have your full name please?
+Customer: Albert Sanders
+Action: Account has been pulled up for Albert Sanders.
+Agent: thank you.
+Agent: To verify your account, I also need your zip code and phone number.
+Customer: 83776
+Customer:  (562) 366-6338
+Action: Identity verification in progess ...
+Agent: than you, your identity is verified.
+Agent: Here is your username: asanders1
+Customer: Please send link to where I can log on. Thanks.
+Action: A link will be sent.
+Agent: sure, here is the link.
+Customer: Not clickable. I guess this is an impossible HIT because I have no PW neither and so there is no fkg way I can complete this at all.  Good bye. wasted 6 minutes for nothing.",1509,albert sanders,NA,(562) 366-6338,NA,3861 kennedy st,"3861 kennedy st  raleigh, ny 83776",raleigh,ny,83776,NA,1,Aryaman,No
+"Agent: Hello, how can I help you?
+Customer: I wanna check the status of my account
+Customer: Norman Bouchard
+Action: Account has been pulled up for Norman Bouchard.
+Agent: Alright, Mr. Bouchard. What questions do you have on your account?
+Customer: Do I have free international shipping?
+Action: Searching the FAQ pages ...
+Action: System Action: search pricing
+Agent: If your pre tax order costs 25 dollars or more, you are entitled to free standard shipping.
+Customer: Thanks that’s all. Have a great day! Bye!
+Agent: No problem. You have a great day as well.",1747,norman bouchard,NA,NA,NA,2539 woodshore st,"2539 woodshore st  raleigh, mi 98074",raleigh,mi,98074,NA,1,Aryaman,No
+"Agent: Hello, how may I help you today?
+Customer: I forgot my username like a moron.  Can you help me?
+Agent: Don't be so hard on yourself, people forget their username all the time. I would be happy to help you recover your username.
+Agent: May I have your full name and account ID?
+Customer: Thanks, Rodriguez Domingo, but I don't have an ID?
+Agent: That's okay.
+Action: Account has been pulled up for Rodriquez Domingo.
+Agent: Alright, Mr. Domingo. I need two of the following: email, zip code, or phone number.
+Customer: rodriguezdomingo035@email.com
+Customer: 68466
+Action: Identity verification in progess ...
+Agent: Alright, your username is rdomingo1.
+Customer: Thank you!
+Agent: No problem! Will that be all?
+Customer: Yes, that is all.
+Agent: Have a great day!",3225,rodriguez domingo,rodriguezdomingo035@email.com,(167) 343-5694,rodriguezdomingo035,7686 primrose ave,"7686 primrose ave  raleigh, tx 68466",raleigh,tx,68466,NA,1,Aryaman,No
+"Customer: Hi my name is Alessandro Phoenix
+Agent: Hey there, how may I be of service?
+Customer: I can't add items to my cart! It's not uploading for some reason
+Customer: Trying to buy the Tommy_Hilfiger shirt
+Agent: I see, you are having issues adding this shirt to your cart, and I am happy to assist!
+Agent: first, may i have your name please?
+Customer: Alessandro Phoenix
+Agent: thanks Alessandro
+Customer: no problem
+Agent: lets try a few things to get this working
+Agent: first, try to refresh the page and then add item to cart
+Action: Agent is looking for solutions ...
+Customer: Ok will do
+Customer: Still no luck
+Customer: Can't checkout with the item
+Agent: no problem
+Agent: now, on the item page, toward the bottom left, does it say the item is out of stock?
+Action: Details of troubleshoot have been entered.
+Customer: ah it does!
+Customer: That must be why. Silly me
+Agent: i see! glad i could help
+Customer: Thank you! I will look for another item
+Agent: Can i assist with anything else today?
+Customer: That will be all
+Agent: Have a good day",8550,alessandro phoenix,alessandrophoenix768@email.com,(411) 589-9633,alessandrophoenix768,5501 lincoln ave,"5501 lincoln ave  san mateo, ny 21272",san mateo,ny,21272,NA,1,Aryaman,No
+"Agent: Hello! Thank you for shopping with AcmeBrands. How may I assist you?
+Customer: When I search for an item I get unrelated results. I would like to know what is going on
+Agent: I'll be glad to help you with that. May I get your full name, please?
+Customer: Sanya Afzal
+Action: Account has been pulled up for Sanya Afzal.
+Agent: Would you please try logging out of your account, and logging in again?
+Agent: This can sometimes resolve search issues.
+Action: Agent is looking for solutions ...
+Customer: Okay I tried that and I'm still having the same issue
+Agent: I'm so sorry about that. Next, would you please try clearing the cookies in your browser?
+Action: Agent is looking for solutions ...
+Customer: Okay I did that and it still didn't work
+Agent: Next let's try this: instead of your original search term, try searching for something else, like ""prada handbag"". Sometimes that can reset the search and get it working again for you.
+Customer: That worked!
+Agent: Wonderful! Is there anything more I may help you with today?
+Customer: No that will be all. Thank you!
+Agent: Thank you so much for contacting AcmeBrands customer service. Goodbye!",8132,sanya afzal,safzal82@email.com,(815) 341-1260,safzal82,4659 kennedy st,"4659 kennedy st  san lima, ny 67997",san lima,ny,67997,NA,1,Aryaman,No
+"Agent: Hi, how can I help you
+Customer: Hi! I'm wondering what the price would be to have my name stitched on one of my items!
+Agent: Okay which item were you interested in?
+Action: Searching the FAQ pages ...
+Action: System Action: search pricing
+Customer: The tommy hilfiger jeans
+Agent: Okay, it depends on the number of characters you would like. How many characters did you want to add?
+Customer: 7
+Agent: That would be $2.10, 30 cents per characters up to the first 15 characters
+Customer: Perfect, thank you!
+Customer: That answers my question.
+Agent: Have a nice day",2069,crystal minh,NA,(589) 592-3323,NA,2623 kennedy st,"2623 kennedy st  monterey, tx 90373",monterey,tx,90373,NA,1,Fiona,No
+"Agent: Hello, how may I help you today?
+Customer: Hi I need to fix the name on my account because it isn't spelled right.
+Agent: Sure, no problem. Can I please have your full name or account ID?
+Customer: Norman Bouchard
+Action: Account has been pulled up for Norman Bouchard.
+Agent: Thank you
+Agent: And is this the current name on your account?
+Customer: currently it is Norman Bouchard
+Customer: but it should be Norman Bouchardi
+Agent: Thank you
+Action: A reason of Norman Bouchard has been recorded.
+Agent: Before I can change your name, I am required to verify your identity. Can you please tell me your zip code, phone number, and PIN number?
+Customer: 59478, (893) 510-7037, 856531
+Action: Identity verification in progess ...
+Action: Account has been updated with Norman Bouchardi.
+Agent: I've successfully updated your name to Norman Bouchardi.
+Agent: Is there anything else I can help you with today?
+Customer: no thank you very much
+Agent: Thank you. Have a great day!",3235,norman bouchard,NA,(893) 510-7037,normanbouchard189,5314 circle drive,"5314 circle drive  san mateo, ca 59478",san mateo,ca,59478,NA,1,Fiona,No
+"Agent: Hi, how can I help you today?
+Customer: Yes i see that my subscription was removed from my account and i still wanted it
+Agent: I can look into that for you, what is your name?
+Customer: Rodriguez Domingo
+Agent: Thank you, and how did you hear this news?
+Action: Account has been pulled up for Rodriguez Domingo.
+Customer: my spouse told me to check my account
+Action: A reason of spouse has been recorded.
+Action: Querying the system for an answer ...
+Agent: It looks like that was our mistake, I apologize! Let me get your subscription restarted quickly.
+Action: Account has been updated with add service.
+Customer: okay, great!
+Agent: Ok, it should be all set for you. Can you see that your subscription is active in your account now?
+Customer: yes, thank you so much
+Agent: You're welcome! You have a great day :)",6783,rodriguez domingo,NA,NA,NA,5408 primrose ave,"5408 primrose ave  baltimore, tx 90704",baltimore,tx,90704,NA,1,Fiona,No
+"Agent: Hi, there.  How may I help you?
+Customer: hi
+Customer: I want to view my shopping history online. However, I cannot access my account because I lost the phone I use for two-factor authentication
+Agent: Okay, I can help you with that.
+Customer: ok
+Agent: May I have your full name?
+Customer: Sanya Afzal
+Action: Account has been pulled up for Sanya Afzal.
+Agent: May I have your email address?
+Customer: I don't remember it, sorry. Is there other info that I can give you?
+Agent: Yes, if you have a PIN, then I can use that.
+Customer: 255640
+Action: Details of 255640 have been entered.
+Agent: I am going to reset the code and send it to the email address I have on file:  safzal@yahoo.com
+Customer: Cool, thanks!
+Agent: I am also going to send you a link about best security practices.
+Action: A link will be sent.
+Customer: Thank you
+Agent: Is there anything else I can help you with?
+Customer: Not today.
+Agent: Have a great day!",5755,sanya afzal,NA,(354) 445-3400,NA,0762 circle drive,"0762 circle drive  la fayette, mi 24295",la fayette,mi,24295,NA,1,Fiona,No
+"Agent: Hello, what can I do for you?
+Customer: Hi there! I was previously signed up for your premium shopping service. My annual payment is coming up due, and I'd like to continue the service, please.
+Agent: Okay, can I have your name please?
+Customer: Joseph Banter
+Action: Account has been pulled up for Joseph Banter.
+Agent: Can I have your account ID and order ID?
+Customer: Sure! My account ID is WHN4ZXZOKE, and my most recent order is: 2672676343
+Action: Identity verification in progess ...
+Action: Querying the system for subscription status ...
+Agent: Your amount due is 14, would you like the card on the accoutn charged?
+Customer: Yes please, that would be perfect
+Agent: Okay, you're all set is there anything else you'll be needing today?
+Customer: That's all, thank you very much for your help
+Agent: Thanks for your continued support of our business.",3263,joseph banter,NA,(127) 565-0559,NA,9320 kennedy st,"9320 kennedy st  brighton, tx 90910",brighton,tx,90910,2672676343,1,Fiona,No
+"Agent: Hello, and thanks for choosing AcmeBrands! What can I do for you today?
+Customer: I have a question about your shipping benefits.
+Agent: Sure! What would you like to know?
+Customer: Do you offer international shipping at any level?
+Action: Searching the FAQ pages ...
+Action: System Action: search policy
+Action: System Action: search pricing
+Action: System Action: search membership
+Action: System Action: search timing
+Action: System Action: search policy
+Action: System Action: search pricing
+Agent: Let me check for you.
+Customer: okay
+Agent: What is your full name?
+Customer: David Williams
+Agent: Thank you, David, one moment, please.
+Action: Account has been pulled up for David WIlliams.
+Action: Querying the system for an answer ...
+Agent: Unfortunately, your particular account does not offer international shipping.
+Agent: I'm going to send you a link to our FAQ page, where you can get more information on shipping poilicies.
+Action: A link will be sent.
+Agent: For now, though, can I help you with anything else?
+Customer: That will be great. Thanks
+Agent: Done!
+Agent: You should see it in your inbox soon. Can I assist you with anything else today?
+Customer: No thank you.
+Agent: You're welcome, have a great day!",10178,david williams,NA,NA,NA,2309 1st ave,"2309 1st ave  newark, mi 76396",newark,mi,76396,NA,1,Fiona,No
+"Agent: Hello! Thank you for contacting us today. How can I help you?
+Customer: Hi.
+Customer: I want to check the status of my account because i have a shipping question
+Agent: Sure! Can I have your name please?
+Customer: David Williams
+Action: Account has been pulled up for David Williams.
+Agent: Thank you, David. Okay what was your question about shipping today?
+Customer: I want to find out if my account includes International Shipping
+Agent: Oh sure. Give me one second to check for you.
+Action: Querying the system for an answer ...
+Agent: Unfortunately your account does not offer international shipping.
+Agent: If you have any further questions about your subscription service you can check the FAQ page at the following link.
+Action: A link will be sent.
+Customer: Why
+Agent: Unfortunately only certain accounts have international shipping available. Your account is not in that category.
+Customer: Okay
+Agent: I apologize. Can I help you with anything else today?
+Customer: How do i upgrade my account to support International Traveling
+Agent: You would have to spend more money to get yourself into a higher tiered membership level.
+Customer: Okay then
+Customer: thanks
+Agent: Thank you and have a great day!",7611,david williams,NA,NA,NA,4103 kennedy st,"4103 kennedy st  raleigh, ny 68222",raleigh,ny,68222,NA,1,Fiona,No
+"Agent: Hello, how may I help you?
+Customer: Could I have the two factor authentication removed from my account, I lost my phone so I can't get the codes now
+Agent: Okay, let's reset it. I'll need your full name and your email address.
+Customer: Rodriguez Domingo
+Action: Account has been pulled up for Rodriguez Domingo.
+Customer: rd2828737@email.com
+Action: Details of rd2828737@email.com have been entered.
+Agent: I've reset the two factor auth on your account. I'm also sending a link which has some security practices you should follow.
+Action: A link will be sent.
+Customer: alright
+Agent: Is there anything else you need?
+Customer: no that was all
+Agent: Okay, thank you and have a wonderful day.",8122,rodriguez domingo,NA,(311) 247-7072,NA,8022 lincoln ave,"8022 lincoln ave  jacksonville, mi 51263",jacksonville,mi,51263,NA,1,Fiona,No
+"Customer: Hello
+Customer: I have a question about my subscription. Can you help me?
+Agent: Hello. How may I help you today?
+Customer: Yes
+Agent: Sure lets take a look.
+Customer: I was wondering if there are any consequences to being late on a subscription payment
+Action: Searching the FAQ pages ...
+Action: System Action: search timing
+Customer: I love the benefits of my subscription but I have lots of bills
+Action: System Action: search policy
+Customer: So I might be late on a payment
+Customer: Do you know what happens if I'm late?
+Agent: Well we do have late fees when it comes subscription fees. It is $ per day past your due date.
+Action: FAQ answer related to policy (question4) was selected.
+Agent: What is your membership level?
+Customer: Gold
+Customer: How much is it per day?
+Agent: SInce you are gold you do get a 5 day grace period.
+Agent: Oh Im sorry. Its $2.00 a day
+Customer: Okay. So I keep my benefits for 5 days? Or do I not have to pay the late fees for 5 days?
+Agent: You keep them during the grace period.
+Customer: Okay
+Agent: Anything else I can help you with?
+Customer: But the late fees begin immediately? Then after five days I lose my benefits? I just want to make sure I understand
+Agent: YOu have a grace period of 5 days then are charged $2 per day late
+Customer: And when do I lose my benefits?
+Customer: Or do I keep them?
+Agent: Yes because you no longer have an active subscription
+Customer: So I lose my benefits after five days?
+Agent: Yes I have just answered that but you typed another question instead of waiting for the answer.
+Customer: ok i'm sorry
+Agent: You have a 5 day grace period then it is $2 per day after that.
+Customer: I didn't mean to be confused
+Agent: Its okay.
+Agent: Anything else I can help you with?
+Customer: No, that's it
+Agent: Great. Have a nice day.",8488,joseph banter,NA,(061) 798-2707,NA,2522 2nd ave,"2522 2nd ave  brighton, ny 15293",brighton,ny,15293,NA,1,Fiona,No
+"Agent: Hello! What's your name, and how may I help you?
+Customer: I'm Crystal Minh and I need to go through the password recovery process.
+Agent: No problem. While I cannot get your old one, I can make you a new one.
+Agent: May I have your username, and pin number?
+Customer: My username is: cm262551
+Customer: I don't have a pin, but my security answer is: Singh
+Agent: Perfect. A new password has been made for you, p7urejcyrun.
+Agent: Please try it if you wish to test it.
+Customer: Ok, that seems to be working fine.
+Customer: Can I still change it if I want?
+Agent: Awesome! Anything else you'd like help with? And yes, you can change it now.
+Customer: No, that will be all. Thanks!
+Agent: No problem. Have a good one!
+Action: A password has been generated.",198,crystal minh,NA,(819) 566-7760,cm262551,6483 woodshore st,"6483 woodshore st  brighton, tx 4136",brighton,tx,4136,NA,1,Fiona,No
+"Agent: Hello, how may I help you today?
+Customer: Can you please tell me the price for overnight shipping?  Thanks
+Agent: I can certainly answer that for you. Please give me a moment to look up that information.
+Action: Searching the FAQ pages ...
+Action: System Action: search pricing
+Action: FAQ answer related to pricing (question3) was selected.
+Agent: Our overnight shipping price is based on weight, rather than distance, if you are located in the continental US.
+Customer: Hmmm, ok.
+Agent: The rate is $39.99 for items up to 5 pounds total, $54.99 for up to 10 pounds total, and $69.99 for heavier items.
+Customer: Great, thank you for the detail.
+Agent: For customers in Hawaii and Alaska, the rate is $10 higher per weight category. We do not offer overnight shipping to destinations outside of the US.
+Customer: OK, that should do it, thanks
+Agent: You are welcome.
+Agent: Is there anything else I can help you with today?
+Customer: No thanks
+Agent: Thank you. Have a great day!",7578,chloe zhang,NA,(790) 175-4420,NA,3114 circle drive,"3114 circle drive  baltimore, ny 78901",baltimore,ny,78901,NA,1,Fiona,No
+"Agent: AcmeBrands, how may I help you?
+Customer: Hello, can you tell me how much it costs to ship something overnight?
+Agent: Sure, let me find out for you?
+Action: Searching the FAQ pages ...
+Action: System Action: search timing
+Action: System Action: search pricing
+Agent: Overnight shipping depends on the weight of the shipment.
+Customer: I think it will be around 2-3 lbs.
+Agent: For 5 pounds or less, it is 39.99, 10 pounds or less is 54.99, and everything else is 69.99
+Agent: It should be 39.99
+Customer: Got it, thanks so much.
+Agent: Are you in the continental United States?
+Customer: Yes
+Agent: Ok, it cost 10 more for Hawaii and Alaska.
+Agent: Can I help you with anything else?
+Customer: No, that's all for me.
+Agent: Have a good day.",4605,crystal minh,NA,(070) 099-4259,NA,8698 circle drive,"8698 circle drive  newark, ny 15737",newark,ny,15737,NA,1,Fiona,No
+"Agent: hello, Thank you for contacting AcmeBrand. How can I help you?
+Customer: Hi, my name's Albert Sanders, I need to check up on something
+Agent: Sure thing Albert, what did you need to check on?
+Customer: I don't have an account, I've been using your site as a guest, but I just heard on the news about premium subscriptions being added to people's accounts
+Customer: I need to check to make sure that I'm not being charged for this, because I never signed up for it
+Agent: Hmm, sure thing let me look into this for you.
+Action: Searching the FAQ pages ...
+Action: System Action: search policy
+Action: System Action: search membership
+Agent: Alright Albert. I have some information available that may be able to help.
+Customer: okay
+Agent: Firstly premium memberships cant be purchesed. You are automatically enrolled into the service based on your past purchases.
+Customer: I see
+Agent: This also means there is no fee for this.
+Agent: If you would like I can let you know the amounts you need to spend for each tier.
+Customer: Oh, well, that sounds like good news
+Customer: I don't think I use this site often enough to qualify, but what is the lowest level?
+Agent: The lowest level would put qualify you for the Bronze tier. This requires $500 worth of purchases over the last year.
+Action: FAQ answer related to membership (question2) was selected.
+Customer: yes, I wouldn't come close to that, even in a good year, but thanks for your help
+Agent: Not a problem, did you have any other questions or concerns I can address?
+Customer: I just heard some troubling news, and I wanted to make sure that there wasn't any 'Service Added', but it seems like I had nothing to worry about
+Customer: Thanks very much for your help
+Agent: I see. We can double check to see if there may have been a service added if you would like.
+Customer: Yes, if you have a second, it can't hurt to double-check
+Agent: Sure thing, how did you hear about the additional service?
+Customer: it was on the news
+Agent: I see let me pull up your guest account real fast.
+Action: Account has been pulled up for Albert Sanders.
+Action: A reason of News has been recorded.
+Agent: I'll check our system to see what this might be about.
+Action: Querying the system for an answer ...
+Agent: So it does look like the news was correct and a service was added to accounts.  I'll go ahead and remove that if you would like.
+Customer: Yes, please.
+Action: Account has been updated with remove service.
+Agent: Let me offer you a refund for the service as well.
+Agent: since it would have been billed to your account.
+Action: A refund has been made for the amount of $40.
+Customer: Ah, thank you.  I'm glad we caught that
+Agent: I'm very sorry for the inconveniece and I'm very happy we were able to get things cleared up!
+Customer: Me too!  Thank you very much for your help, you were excellent.
+Agent: Did you need anything else today?
+Customer: No, everything seems to be cleared up now.
+Agent: Thank you for shopping with us Albert, have a wonderful day!
+Customer: You too",2552,albert sanders,NA,NA,NA,6725 1st ave,"6725 1st ave  san mateo, ca 43965",san mateo,ca,43965,NA,1,Fiona,No
+"Agent: Hey, how can I help you?
+Customer: Hi i was rechecking my most recent order and it seems to have the wrong payment method used
+Customer: Hello?
+Agent: Okay, let me check on that
+Agent: Can I get your full name, account ID, and order ID?
+Customer: Chloe Zhang
+Customer: J4G0XJWBUK
+Customer: 1716211077
+Action: Account has been pulled up for Chloe Zhang.
+Action: Identity verification in progress ...
+Agent: Thank you. What is the shipping status?
+Customer: Delivered
+Agent: Okay, it is too late to change the payment on this order, but we can update it for future orders if you want?
+Customer: It says it used my card when i thought i paid for it with Paypal
+Customer: Sorry i mean it used paypal when i used my card
+Agent: That's okay, did you want to update it to your card for future orders?
+Action: Shipping status of delivered has been noted.
+Customer: Yes please
+Action: Order has been updated with credit card.
+Agent: Great, I went ahead and made that change!
+Agent: Anything else I can help you with?
+Customer: no thanks
+Agent: Have a great dat",8390,chloe zhang,NA,(370) 207-9996,NA,0876 2nd ave,"0876 2nd ave  san mateo, ca 52652",san mateo,ca,52652,1716211077,1,Fiona,No
+"Agent: Hi, how can I help you?
+Customer: I have tried searching for items several times and I always get 0 results
+Agent: uh oh.We can't have that!
+Agent: Here is what we suggest. First, log out & then log in to your account.
+Action: Agent is looking for solutions ...
+Customer: alright it seems the samer
+Customer: same*
+Agent: OK. Will you try clearing cookies?
+Customer: that seems to have helped
+Agent: Great! That was quick, you must have done this before! Good for you!
+Agent: So search is working now?
+Agent: Is there anything else today?
+Customer: yes everything is good
+Customer: and that was all
+Action: Agent is looking for solutions ...
+Agent: great
+Agent: have a good day",6055,sanya afzal,sa377951@email.com,(328) 902-6105,sa377951,4481 2nd ave,"4481 2nd ave  raleigh, wa 47370",raleigh,wa,47370,NA,1,Fiona,No
+"Agent: hello!
+Customer: hey
+Agent: how can I help you today?
+Customer: yes i see an item that i would love to buy and i was trying to see when i could use the promo code?
+Agent: sure, I'd be happy to help you with that
+Agent: are you looking to see when your promo code expires?
+Action: Searching the FAQ pages ...
+Action: System Action: search pricing
+Action: System Action: search timing
+Agent: are you still there?
+Customer: yes
+Customer: sorry
+Agent: no problem!
+Customer: i'm looking to see when i can start using it
+Agent: sure, you can use a promo code immediately and they usually expire seven days after they were issued
+Agent: The expiration date should be printed at the bottom of the paper, it's in a really small font
+Agent: Was there anything I could help you with?
+Customer: okay yes i see it know, thank you
+Customer: that will be all
+Agent: you're welcome!
+Agent: have a great afternoon!
+Customer: you too",2222,albert sanders,NA,(465) 975-5455,NA,7055 woodshore st,"7055 woodshore st  newark, tx 35210",newark,tx,35210,NA,1,Max,No
+"Agent: Hi.  How can I help you?
+Customer: I forgot my username
+Agent: Ok
+Agent: Can you tell me your name, zip code, phone number, and email address?
+Customer: Norman Bouchard, phone 578-539-4868, zip 8557, and normanbouchard500@email.com
+Action: Account has been pulled up for Norman Bouchard.
+Action: Identity verification in progress ...
+Agent: Your username is nbouchard1
+Customer: okay, let me try that
+Customer: that works, thanks
+Agent: Is there anything else I can do for you today?
+Customer: that's all, thanks
+Agent: Ok, I'll end this chat now",8225,norman bouchard,normanbouchard500@email.com,(578) 539-4868,normanbouchard500,5463 brushwick dr,"5463 brushwick dr  newark, tx 8557",newark,tx,8557,NA,1,Max,No
+"Agent: Hello and thank you for contacting us today. How can I be of service?
+Customer: good morning! Are you open today?
+Agent: I can look into a store for you. Can I please get your name?
+Customer: With this virus going around so many retail stores are closing.
+Customer: Yes, My name is David Williams. I am a silver member. Due to the virus situation, I need to stock up on a few items.
+Agent: Sure, David! I totally understand. Let me pull that information up for you!
+Action: Searching the FAQ pages ...
+Action: System Action: search timing
+Customer: okay, thank you.
+Agent: Okay, David! It does look like our Washington Branch of AcmeBrands is open today from 8AM to 11PM. If you would like to order ahead and have it ready for pickup you can also do that at our website, www.acmebrands.com.
+Customer: Well, thank you. I am heading there now. I may use the order ahead next time.
+Agent: Perfect. Is there anything else I can help you with this afternoon?
+Customer: Thant's it. Have a great day!
+Agent: Thank you, David! Stay safe and healthy!",745,david williams,NA,(673) 157-6124,NA,8680 circle drive,"8680 circle drive  baltimore, ny 94193",baltimore,ny,94193,NA,1,Max,No
+"Agent: hi! how can I help you?
+Customer: I'm trying to place an order, but the website is running really slow. I just wanted to see what was going on.
+Agent: Sure, I'd be happy to help you with that
+Customer: Thank you.
+Agent: I'll let the website team know about this - have you tried logging out and logging back in to see if that fixes it?
+Action: The website team has been notified.
+Customer: Yes, I did that twice but it didn't help.
+Agent: ok, are you able to access other websites?
+Customer: Yes, it's just this one that's going so slow.
+Agent: you might also want to try closing all other tabs and other programs running. Try that and see if it helps
+Customer: I'll go ahead and try that. If it doesn't work, I'll get back in touch.
+Agent: OK, great, we can always place that order for you if that doesn't work.
+Customer: Ok, thank you!
+Agent: Is there anything else I can help you with today?
+Customer: No, that was it.
+Agent: ok, well have a wonderful day, nice chatting with you!",4163,rodriguez domingo,rd739191@email.com,(590) 718-8143,rd739191,5551 lincoln ave,"5551 lincoln ave  brighton, ca 83574",brighton,ca,83574,NA,1,Max,No
+"Agent: Hello thank you for contacting us today. How may I help you?
+Customer: I'm looking at a calvin klein t-shirt for $84.00 and I want to know how wide the neck is.  I don't want one that squeezes my neck.
+Agent: Sure thing let me see what information I can find for you.
+Action: Searching the FAQ pages ...
+Action: System Action: search shirt
+Agent: I'm happy to tell you that our shirts are intentionally designed with loose collars for comforrt. The standard Size is around 15 inches  14 inches on the smaller end and 16 inches for larger ones.
+Action: FAQ answer related to shirt (how4) was selected.
+Customer: OH great because I have a large neck and I hate when shirts choke me.  THanks for the info
+Agent: Not a problem. Was there anything else I could help you with?
+Customer: that's all.  Thank you have a nice day.
+Agent: Thank you for shopping with us and you have a nice day as well!",3541,joseph banter,NA,(991) 278-7283,NA,2681 circle drive,"2681 circle drive  newark, wa 31728",newark,wa,31728,NA,1,Max,No
+"Agent: Hello, how can I help you?
+Customer: Hi I was wondering if the Tommy Hilfiger boots are waterproof.
+Action: Searching the FAQ pages ...
+Action: System Action: search boots
+Action: FAQ answer related to boots (other1) was selected.
+Agent: Hello, we have a wide range of boots, including waterproof and non-waterproof. However, the majority of our boots are waterproof. I suggest looking at the guarantee that will be attached when you purchase the boots
+Customer: Okay thanks
+Agent: Is there anything else I can help you with?
+Customer: No that's all I needed
+Agent: Have a great day",5399,albert sanders,NA,(099) 748-6706,NA,8694 1st ave,"8694 1st ave  monterey, ca 19251",monterey,ca,19251,NA,1,Max,No
+"Agent: Hi! How can I help you?
+Customer: hey
+Agent: hey!
+Customer: I have a premium subscription service and want to know when it expires
+Agent: Sure! I can help with that - can I have your name please?
+Action: Searching the FAQ pages ...
+Action: System Action: search membership
+Customer: is it due today?
+Agent: I can find out but I'll need your name as well as your account ID and order ID
+Customer: Albert Sanders
+Action: Account has been pulled up for Albert Sanders.
+Customer: Account ID: THECK9SQHK
+Customer: Order ID: 3602456615
+Action: Identity verification in progress ...
+Action: Querying the system for subscription status ...
+Agent: Thanks for that information. I'm showing your payment of $55 is due tomorrow
+Customer: great! thanks
+Customer: ill pay tomorrow
+Agent: I'll send you a link so you can look this info up online in the future!
+Action: A link will be sent.
+Customer: tks
+Agent: You're welcome, you can just login with your username asanders1
+Agent: Is there anything else I can help you with?
+Customer: no thats everything
+Agent: great, have a wonderful evening Mr Sanders",7898,albert sanders,NA,(166) 811-4626,NA,3085 lexington ave,"3085 lexington ave  san lima, wa 16365",san lima,wa,16365,3602456615,1,Max,No
+"Agent: Hi, thanks for contacting AcmeBrands. How can I help you?
+Customer: I am looking at a cool pair of jeans, but I'm worried about how often they will need to be washed. Do you know how often that should happen?
+Agent: Sure, i'd be happy to help you out with that.
+Customer: Okay, thanks!
+Agent: Can I get your first name so I can better address you?
+Customer: Joyce
+Agent: Thanks Joyce.
+Action: Searching the FAQ pages ...
+Action: System Action: search jeans
+Action: FAQ answer related to jeans (how2) was selected.
+Agent: If you are using our jeans normally, they should be washed around once a week. That's if you use them two or three times a week.
+Customer: Yeah, that sounds about right.
+Agent: We don't recommend washing more often than that, as it can dull the color.
+Customer: Whew! My laziness won't affect the longevity of the jeans then.
+Customer: Awesome! That's all I wanted to know. I appreciate your help.
+Agent: Not a problem, that's what we are here for! Is there anything else I can help you out with today?
+Customer: Nope, that's it.
+Agent: Ok, great!
+Agent: Have an excellent day then!
+Customer: You too!",10141,joyce wu,NA,(951) 674-3230,NA,9820 primrose ave,"9820 primrose ave  raleigh, ca 73329",raleigh,ca,73329,NA,1,Max,No
+"Agent: Thank you for contacting Acme.  How may I help you today?
+Customer: Yes i would like to see how i can go about getting an extension on my payment
+Agent: I may be able to help you with that.  Is this an extension on a subscription payment?
+Customer: yes
+Agent: Okay, I'll take a look at your account, if I may gather some details from you first
+Agent: May I ask your full name, account ID, the order ID of any recent purchase, and your membership level?
+Customer: ok one sec
+Customer:  David Williams, account id FH CRNOZLJR and order id 7378682064
+Action: Account has been pulled up for David Williams.
+Action: Identity verification in progress ...
+Customer: Sliver
+Action: Identity verification in progress ...
+Agent: Thanks Mr. Williams
+Customer: welcome
+Agent: So as long as your account is no more than a day late, I can offer a full extension
+Agent: I can see in your account that your account is currently up to date, so I will go ahead and extend the next due date for you
+Action: Membership level of Silver has been noted.
+Customer: okay great!
+Action: Account has been updated with extend subscription.
+Agent: Okay, you are all set.  Is there anything else I can help with while we're here?
+Customer: thank you and that will be all
+Agent: You're welcome.  Have a great day",7763,david williams,NA,(502) 188-4487,NA,6356 circle drive,"6356 circle drive  brighton, mi 85491",brighton,mi,85491,7378682064,1,Max,No
+"Agent: Hi! We appreciate you reaching out to us today. How can I be of service?
+Customer: Hi. I am looking for jeans
+Customer: I am looking for that 90's look with the holes. Any suggestions?
+Agent: Sure. Let me see what I can find for you. What is your name?
+Customer: preferably Guess
+Customer: David Williams
+Agent: Thanks David! Sure let me see what we have in stock.
+Action: Searching the FAQ pages ...
+Action: System Action: search jeans
+Agent: Okay, it does look like we do carry that style as they are our most popular style currently. If you do not see it available online that probably means we are out of stock unfortunately.
+Customer: Cool. and they are Guess?
+Agent: Yes, it does look like we carry that brand of jean when they are in stock.
+Customer: Thanks. I will check it out.
+Agent: Is there anything else I can help you with today?
+Customer: That will be it, thanks
+Agent: Thank you, David! Have a great afternoon.",887,david williams,NA,(535) 638-7735,NA,8331 lexington ave,"8331 lexington ave  brighton, wa 27545",brighton,wa,27545,NA,1,Max,No
+"Agent: Thank you for contacting AcmeBrands. How can I help you today?
+Customer: yes i would like to know when my local store will be opening up. I love you guys thing and can't wait to shop at the store
+Agent: Sure thing, let me take a look for you.
+Action: Searching the FAQ pages ...
+Action: System Action: search timing
+Agent: Our local store hours may vary, but we encourage all stores to be open at least from 8AM to 11PM to best serve our customers.
+Agent: You can also visit us online at www.acmebrands.com for service 24 hours a day, 7 days a week.
+Agent: The website will allow you to make purchase, process refunds, and get answers to FAQs.
+Action: FAQ answer related to timing (question2) was selected.
+Agent: Is there anything else I can help you with today?
+Customer: thank you for your help
+Customer: that will be all
+Agent: You're welcome, have a great day!",9794,joseph banter,NA,(588) 637-8041,NA,2643 brushwick dr,"2643 brushwick dr  jacksonville, mi 84799",jacksonville,mi,84799,NA,1,Max,No

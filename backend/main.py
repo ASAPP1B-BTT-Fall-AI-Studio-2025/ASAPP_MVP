@@ -577,17 +577,22 @@ async def extract_fields(request: ExtractRequest):
             print(f"LLM extraction failed: {e}")
             llm_result = {"email": "NA", "phone": "NA", "zipCode": "NA", "orderId": "NA"}
     
-    # Combine results (prefer LLM if available and not "NA")
+    # Combine results - use the best from each source
+    # Priority: 1) If both found something, prefer regex (more deterministic)
+    #           2) If only one found something, use that
+    #           3) If neither found anything, return "NA"
     final_result = {}
     for field in ["email", "phone", "zipCode", "orderId"]:
         regex_val = regex_result.get(field, "NA")
         llm_val = llm_result.get(field, "NA") if LLM_AVAILABLE else "NA"
         
-        # Prefer LLM result if it's not "NA", otherwise use regex
-        if llm_val != "NA":
-            final_result[field] = llm_val
+        # Smart combination: use whichever found something
+        if regex_val != "NA":
+            final_result[field] = regex_val  # Prefer regex (deterministic)
+        elif llm_val != "NA":
+            final_result[field] = llm_val  # Fallback to LLM
         else:
-            final_result[field] = regex_val
+            final_result[field] = "NA"
     
     # Add metadata
     metadata = {
@@ -822,12 +827,36 @@ async def extract_bulk(request: ExtractRequest):
                         
                         if conversation_text.strip():
                             convo_id = item.get('convo_id', idx)
+                            
+                            # First extract from conversation text
                             extraction_result = await extract_single_conversation(
                                 conversation_text,
                                 f"{request.fileName or 'abcd'}_convo_{convo_id}"
                             )
+                            
+                            # ALSO extract from scenario field (has customer info like phone, zip, order_id)
+                            if 'scenario' in item and isinstance(item['scenario'], dict):
+                                scenario = item['scenario']
+                                
+                                # Extract from personal info
+                                if 'personal' in scenario:
+                                    personal = scenario['personal']
+                                    if extraction_result['phone'] == 'NA' and personal.get('phone'):
+                                        extraction_result['phone'] = personal['phone']
+                                    if extraction_result['email'] == 'NA' and personal.get('email'):
+                                        extraction_result['email'] = personal['email']
+                                
+                                # Extract from order info
+                                if 'order' in scenario:
+                                    order = scenario['order']
+                                    if extraction_result['zipCode'] == 'NA' and order.get('zip_code'):
+                                        extraction_result['zipCode'] = order['zip_code']
+                                    if extraction_result['orderId'] == 'NA' and order.get('order_id'):
+                                        extraction_result['orderId'] = order['order_id']
+                            
                             # Add conversation ID to metadata
                             extraction_result['metadata']['conversation_id'] = convo_id
+                            extraction_result['metadata']['has_scenario_data'] = 'scenario' in item
                             results.append(extraction_result)
                 
                 if results:
@@ -932,16 +961,19 @@ async def extract_single_conversation(text: str, file_name: Optional[str] = None
             print(f"LLM extraction failed: {e}")
             llm_result = {"email": "NA", "phone": "NA", "zipCode": "NA", "orderId": "NA"}
     
-    # Combine results
+    # Combine results - use the best from each source
+    # Priority: regex first (deterministic), then LLM as fallback
     final_result = {}
     for field in ["email", "phone", "zipCode", "orderId"]:
         regex_val = regex_result.get(field, "NA")
         llm_val = llm_result.get(field, "NA") if LLM_AVAILABLE else "NA"
         
-        if llm_val != "NA":
-            final_result[field] = llm_val
+        if regex_val != "NA":
+            final_result[field] = regex_val  # Prefer regex
+        elif llm_val != "NA":
+            final_result[field] = llm_val  # Fallback to LLM
         else:
-            final_result[field] = regex_val
+            final_result[field] = "NA"
     
     # Add metadata
     metadata = {
