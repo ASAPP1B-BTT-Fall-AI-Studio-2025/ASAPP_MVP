@@ -23,14 +23,14 @@ export default function Header({ onProfileClick }: HeaderProps) {
           {/* Right side - Profile */}
           <div className="flex items-center space-x-4">
             {/* Profile */}
-            <button
+            {/* <button
               onClick={onProfileClick}
               className="flex items-center space-x-2 p-2 text-gray-400 hover:text-gray-600 rounded-lg hover:bg-gray-100"
               title="Profile"
             >
               <User className="w-5 h-5" />
               <span className="text-sm font-medium">Profile</span>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
