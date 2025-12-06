@@ -481,7 +481,7 @@ class AsyncLLMExtractor:
         genai.configure(api_key=gemini_key)
         
         # Use Gemini 2.0 Flash for fast extraction
-        self.model = genai.GenerativeModel('gemini-2.0-flash')
+        self.model = genai.GenerativeModel('gemini-2.5-flash')
         
         self.prompt_template = """You are an intelligent assistant that extracts structured data from customer service conversations.
 
