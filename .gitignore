@@ -34,3 +34,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Large data files
+sample-data/abcd_v1.1.json
+sample-data/abcd_v1.1.json.gz
+sample-data/abcd_sample_100.json
+backend/data/
+backend/server.log
+*.db
+

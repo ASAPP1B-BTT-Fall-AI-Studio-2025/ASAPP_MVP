@@ -1,0 +1,4 @@
+{"conversation": "Agent: Hello! How can I help you today? Customer: Hi, my email is john.doe@example.com and my phone is (555) 123-4567. I need help with order ID #ORD-2024-98765", "scenario": "customer_support"}
+{"text": "Customer service agent talking to caller. Phone number: (555) 987-6543, Email: jane.smith@gmail.com, ZIP code: 90210, Order number is ABC-2024-55555", "type": "call_transcript"}
+{"message": "New customer inquiry - contact: sarah@company.com, phone (555) 246-8135, location 75001, ref# CUST-2024-11111", "priority": "high"}
+{"content": "Support ticket: Customer reached at (555) 369-2580, email: mike.johnson@yahoo.com, delivery zip 60601, order tracking number ORD-2024-44444", "status": "open"}

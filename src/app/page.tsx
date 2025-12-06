@@ -23,6 +23,7 @@ export default function Home() {
   const [extractedFields, setExtractedFields] = useState<ExtractedFields | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [bulkResults, setBulkResults] = useState<ExtractedFields[]>([]);
 
   // Load conversations on mount
   useEffect(() => {
@@ -47,8 +48,8 @@ export default function Home() {
     setIsLoading(true);
     
     try {
-      // Extract fields using FastAPI
-      const extractResponse = await fetch(`${FASTAPI_URL}/extract`, {
+      // Try bulk extraction first (handles both single and multiple conversations)
+      const bulkResponse = await fetch(`${FASTAPI_URL}/extract-bulk`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -56,30 +57,52 @@ export default function Home() {
         body: JSON.stringify({ text, fileName }),
       });
 
-      if (!extractResponse.ok) {
+      if (!bulkResponse.ok) {
         throw new Error('Failed to extract fields');
       }
 
-      const extractedData = await extractResponse.json();
-      setExtractedFields(extractedData);
+      const bulkData = await bulkResponse.json();
+      const results = bulkData.conversations || [];
+      
+      // Store bulk results for download
+      setBulkResults(results);
+      
+      // Use the first result to display
+      if (results.length > 0) {
+        setExtractedFields(results[0]);
+      }
 
-      // Save conversation using FastAPI
-      const saveResponse = await fetch(`${FASTAPI_URL}/conversations`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          title: fileName || `Conversation ${conversations.length + 1}`,
-          content: text,
-          fileName,
-        }),
-      });
+      // Save ONE entry for the bulk upload with summary of extracted fields
+      if (results.length > 0) {
+        try {
+          const convTitle = fileName || `Bulk Upload - ${new Date().toLocaleString()}`;
+          const saveResponse = await fetch(`${FASTAPI_URL}/conversations`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              title: convTitle,
+              content: JSON.stringify({ totalConversations: results.length, results }),
+              fileName,
+              // Use first result's extracted fields as summary
+              extractedFields: {
+                email: results[0]?.email || 'NA',
+                phone: results[0]?.phone || 'NA',
+                zipCode: results[0]?.zipCode || 'NA',
+                orderId: results[0]?.orderId || 'NA',
+              }
+            }),
+          });
 
-      if (saveResponse.ok) {
-        const savedConversation = await saveResponse.json();
-        setConversations(prev => [savedConversation, ...prev]);
-        setSelectedConversationId(savedConversation.id);
+          if (saveResponse.ok) {
+            const savedConversation = await saveResponse.json();
+            setConversations(prev => [savedConversation, ...prev]);
+            setSelectedConversationId(savedConversation.id);
+          }
+        } catch (error) {
+          console.error('Failed to save conversation:', error);
+        }
       }
     } catch (error) {
       console.error('Failed to process conversation:', error);
@@ -106,10 +129,53 @@ export default function Home() {
       if (response.ok) {
         const conversation = await response.json();
         setExtractedFields(conversation.extractedFields);
+        
+        // Check if this conversation has stored bulk results
+        try {
+          const content = JSON.parse(conversation.content);
+          if (content.results && Array.isArray(content.results)) {
+            setBulkResults(content.results);
+          } else {
+            // Single conversation - clear bulk results and show single fields
+            setBulkResults([]);
+          }
+        } catch {
+          // Not JSON content - clear bulk results
+          setBulkResults([]);
+        }
       }
     } catch (error) {
       console.error('Failed to load conversation details:', error);
     }
+  };
+
+  const handleDownloadResults = () => {
+    if (bulkResults.length === 0) {
+      alert('No results to download');
+      return;
+    }
+
+    // Create download object
+    const downloadData = {
+      fileName: 'extractify_results',
+      exportDate: new Date().toISOString(),
+      totalRecords: bulkResults.length,
+      results: bulkResults
+    };
+
+    // Convert to JSON string
+    const jsonString = JSON.stringify(downloadData, null, 2);
+    
+    // Create blob and download
+    const blob = new Blob([jsonString], { type: 'application/json' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `extractify_results_${new Date().toISOString().split('T')[0]}.json`;
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
+    document.body.removeChild(a);
   };
 
   return (
@@ -128,17 +194,13 @@ export default function Home() {
           </div>
 
           {/* Main Content Area */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-3 space-y-6">
             {/* Input Methods */}
-            <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <ConversationInput
                 onSubmit={handleTextSubmit}
                 isProcessing={isProcessing}
               />
-              
-              <div className="text-center text-gray-500 text-sm">
-                — OR —
-              </div>
               
               <FileUpload
                 onFileUpload={handleFileUpload}
@@ -146,25 +208,16 @@ export default function Home() {
               />
             </div>
           </div>
-
-          {/* Right Sidebar - Extracted Fields */}
-          <div className="lg:col-span-1">
-            <ExtractedFieldsDisplay
-              fields={extractedFields}
-              isLoading={isLoading}
-            />
-          </div>
         </div>
 
-        {/* Optional Bottom Section for Future Features */}
-        <div className="mt-12 p-8 bg-gradient-to-r from-white to-gray-50 rounded-xl shadow-lg border border-gray-200">
-          <h3 className="text-xl font-bold text-gray-800 mb-3 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Future Features
-          </h3>
-          <p className="text-gray-600">
-            This section can be used to visualize features explored during EDA for batch conversation processing, 
-            analytics dashboards, or additional extraction capabilities.
-          </p>
+        {/* Bottom Section - Extracted Fields Results */}
+        <div className="mt-8">
+          <ExtractedFieldsDisplay
+            fields={extractedFields}
+            isLoading={isLoading}
+            bulkResults={bulkResults}
+            onDownload={handleDownloadResults}
+          />
         </div>
       </main>
     </div>
