@@ -72,10 +72,59 @@ export default function Home() {
         setExtractedFields(results[0]);
       }
 
-      // Save ONE entry for the bulk upload with summary of extracted fields
+      // Save ONE entry for the upload with summary of extracted fields
       if (results.length > 0) {
         try {
-          const convTitle = fileName || `Bulk Upload - ${new Date().toLocaleString()}`;
+          // Create a concise, clean title
+          let convTitle = '';
+          const baseName = fileName ? fileName.replace(/\.[^/.]+$/, '') : ''; // Remove extension
+          const format = bulkData.format || 'text';
+          const total = results.length;
+          const firstResult = results[0];
+          const category = firstResult?.metadata?.category;
+          
+          // Get the most common conversation type for multi-convo uploads
+          const categories = bulkData.categories || {};
+          const topCategory = Object.entries(categories)
+            .sort((a, b) => (b[1] as number) - (a[1] as number))[0];
+          const topCategoryName = topCategory 
+            ? (topCategory[0] as string).replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+            : '';
+          
+          // Single conversation
+          if (total === 1) {
+            // Get just the main flow type for ABCD data
+            const flow = firstResult?.metadata?.flow;
+            const mainCategory = flow 
+              ? flow.replace(/_/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase())
+              : '';
+            
+            if (mainCategory) {
+              convTitle = mainCategory;
+            } else if (baseName) {
+              convTitle = baseName;
+            } else {
+              convTitle = `Chat ${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`;
+            }
+          }
+          // Multiple conversations from ABCD dataset
+          else if (format === 'abcd') {
+            // Clean format: "filename (50) - Mostly Product Defect"
+            if (topCategoryName) {
+              convTitle = `${baseName || 'ABCD'} (${total}) • ${topCategoryName}`;
+            } else {
+              convTitle = `${baseName || 'ABCD Dataset'} (${total} convos)`;
+            }
+          }
+          // Multiple conversations from file
+          else if (baseName) {
+            convTitle = `${baseName} (${total} convos)`;
+          }
+          // Fallback for pasted multi-conversation text
+          else {
+            convTitle = `${total} Conversations`;
+          }
+          
           const saveResponse = await fetch(`${FASTAPI_URL}/conversations`, {
             method: 'POST',
             headers: {

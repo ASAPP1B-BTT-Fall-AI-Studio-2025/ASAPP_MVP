@@ -125,6 +125,42 @@ def init_database():
 init_database()
 
 # Enhanced Regex Extraction Functions
+def extract_customer_name(text):
+    """
+    Extract customer name from conversation text.
+    Looks for common patterns like "my name is", "this is", "I'm", etc.
+    
+    Args:
+        text: String containing conversation text
+        
+    Returns:
+        Customer name if found, "NA" otherwise
+    """
+    if text is None or text == "":
+        return "NA"
+    
+    text_str = str(text)
+    
+    # Patterns to find customer names
+    name_patterns = [
+        r"(?:my name is|i'm|i am|this is|name's|name is)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)",  # "My name is John Smith"
+        r"(?:call me|it's|its)\s+([A-Z][a-z]+)",  # "Call me John"
+        r"^(?:hi|hello|hey)[,!]?\s+(?:this is\s+)?([A-Z][a-z]+)",  # "Hi, this is John"
+        r"(?:customer|user|caller):\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)",  # "Customer: John Smith"
+    ]
+    
+    for pattern in name_patterns:
+        match = re.search(pattern, text_str, re.IGNORECASE | re.MULTILINE)
+        if match:
+            name = match.group(1).strip()
+            # Capitalize properly
+            name = ' '.join(word.capitalize() for word in name.split())
+            # Validate it looks like a name (not too long, no numbers)
+            if len(name) <= 30 and not re.search(r'\d', name):
+                return name
+    
+    return "NA"
+
 def extract_email(text):
     """
     Extract email address from conversation text.
@@ -424,6 +460,7 @@ def regex_extract_fields(text: str) -> Dict[str, str]:
         "phone": extract_phone(text),
         "zipCode": extract_zip_code(text),
         "orderId": extract_order_id(text),
+        "customerName": extract_customer_name(text),
     }
 
 # LLM Extraction Class
@@ -854,13 +891,40 @@ async def extract_bulk(request: ExtractRequest):
                                     if extraction_result['orderId'] == 'NA' and order.get('order_id'):
                                         extraction_result['orderId'] = order['order_id']
                             
-                            # Add conversation ID to metadata
+                            # Add conversation ID and category info to metadata
                             extraction_result['metadata']['conversation_id'] = convo_id
                             extraction_result['metadata']['has_scenario_data'] = 'scenario' in item
+                            
+                            # Add flow/subflow for conversation categorization
+                            if 'scenario' in item and isinstance(item['scenario'], dict):
+                                scenario = item['scenario']
+                                extraction_result['metadata']['flow'] = scenario.get('flow', 'unknown')
+                                extraction_result['metadata']['subflow'] = scenario.get('subflow', '')
+                                # Create a human-readable category
+                                flow = scenario.get('flow', '').replace('_', ' ').title()
+                                subflow = scenario.get('subflow', '').replace('_', ' ').title()
+                                extraction_result['metadata']['category'] = f"{flow}" if not subflow else f"{flow} - {subflow}"
+                            
                             results.append(extraction_result)
                 
                 if results:
-                    return {"conversations": results, "total": len(results), "format": "abcd", "dataset": "ABCD v1.1"}
+                    # Create summary of conversation types
+                    categories = {}
+                    for r in results:
+                        cat = r.get('metadata', {}).get('flow', 'unknown')
+                        categories[cat] = categories.get(cat, 0) + 1
+                    
+                    # Create a descriptive summary
+                    summary = ", ".join([f"{v} {k.replace('_', ' ')}" for k, v in categories.items()])
+                    
+                    return {
+                        "conversations": results, 
+                        "total": len(results), 
+                        "format": "abcd", 
+                        "dataset": "ABCD v1.1",
+                        "summary": summary,
+                        "categories": categories
+                    }
             
             # Handle JSON array format
             if isinstance(json_data, list):
@@ -958,7 +1022,7 @@ async def extract_single_conversation(text: str, file_name: Optional[str] = None
         try:
             llm_result = await llm_extractor.extract_async(text)
         except Exception as e:
-            print(f"LLM extraction failed: {e}")
+            print(f"LLM extraction error: {e}")
             llm_result = {"email": "NA", "phone": "NA", "zipCode": "NA", "orderId": "NA"}
     
     # Combine results - use the best from each source
@@ -975,6 +1039,9 @@ async def extract_single_conversation(text: str, file_name: Optional[str] = None
         else:
             final_result[field] = "NA"
     
+    # Customer name from regex only (LLM not trained for this yet)
+    customer_name = regex_result.get("customerName", "NA")
+    
     # Add metadata
     metadata = {
         "fileName": file_name,
@@ -990,6 +1057,7 @@ async def extract_single_conversation(text: str, file_name: Optional[str] = None
         "phone": final_result["phone"],
         "zipCode": final_result["zipCode"],
         "orderId": final_result["orderId"],
+        "customerName": customer_name,
         "metadata": metadata
     }
 
