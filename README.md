@@ -13,6 +13,16 @@ A beautiful, modern Next.js application that uses advanced AI/ML techniques to e
 - **📱 Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **⚡ Real-time Processing**: Instant field extraction and validation
 
+### 👥 **Team Members**
+
+| Name              | GitHub Handle    | Contribution                                                                        |
+|-------------------|-----------------|--------------------------------------------------------------------------------------|
+| Divya Varadha     | @Divyatech-hub  | Exploratory data analysis (EDA), API design and implementation, project coordination |
+| Alicia Penuelas   | @aliciapm4      | Exploratory data analysis (EDA), Data preprocessing, data validation                 |
+| Isabella Delmonte | @idelmonte      | Exploratory data analysis (EDA), Data preprocessing, data validation                 |
+| Ariji Chakma      | @arijitchakma79 | Exploratory data analysis (EDA), API design and implementation                       |
+
+
 ## 🎨 Design Philosophy
 
 Extractify features a modern gradient-based design with:
